@@ -1,0 +1,39 @@
+project:
+  type: book
+  output-dir: ./docs
+
+book:
+  title: "CPAT Documentation" 
+  author: "CPAT Team"
+  date: last-modified
+  favicon: ./00/media/image1.png
+  search: true
+  repo-url: https://github.com/
+  repo-actions: [issue]
+  downloads: [pdf]
+  reader-mode: true
+  page-footer: "WBG, 2023"
+  margin-header: |
+    ![](./00/media/image1.png)
+  chapters:
+    - index.qmd
+    - 01_User_Guide.qmd
+    - 02_Summary.qmd
+    - 03_Mitigation.qmd
+    - 04_Multipliers.qmd
+    - 05_Distribution.qmd
+    - 06_Air_pollution.qmd
+    - 07_Road_Transport.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    toc-depth: 4
+    title-block-style: plain
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

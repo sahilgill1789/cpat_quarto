@@ -1,0 +1,35 @@
+{
+  "index.qmd": {
+    "index.html": "172697d0"
+  },
+  "intro.qmd": {
+    "intro.html": "9f5afabe"
+  },
+  "summary.qmd": {
+    "summary.html": "a50dd222"
+  },
+  "references.qmd": {
+    "references.html": "74dc9eec"
+  },
+  "01_User_Guide.qmd": {
+    "01_User_Guide.html": "123948f2"
+  },
+  "02_Summary.qmd": {
+    "02_Summary.html": "cf2d517d"
+  },
+  "03_Mitigation.qmd": {
+    "03_Mitigation.html": "8a2fa38e"
+  },
+  "04_Multipliers.qmd": {
+    "04_Multipliers.html": "4ecd4c50"
+  },
+  "05_Distribution.qmd": {
+    "05_Distribution.html": "b37d3d7b"
+  },
+  "06_Air_pollution.qmd": {
+    "06_Air_pollution.html": "abea58ef"
+  },
+  "07_Road_Transport.qmd": {
+    "07_Road_Transport.html": "73fbdbeb"
+  }
+}
