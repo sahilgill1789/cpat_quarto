@@ -2,8 +2,6 @@ project:
   type: book
   output-dir: ./docs
 
-execute: 
-  freeze: auto
 
 book:
   title: "CPAT Documentation" 
