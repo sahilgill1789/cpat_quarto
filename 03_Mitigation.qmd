@@ -1,29 +1,23 @@
 
-# Mitigation overview and methodology
+The Mitigation Module[^3_1]
 
 <table>
 <tbody>
 <tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>3. The Mitigation Module[1]</td>
-</tr>
-</tbody>
-</table>
+<td>
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>World Bank</strong></p>
 <p>Paolo Agnolucci</p>
 <p>Daniel Bastidas</p>
-<p>Alexandra Campmas[2]</p>
+<p>Alexandra Campmas[^3_2]</p>
 <p>Faustyna Gawryluk</p>
 <p>Olivier Lelouch</p>
-<p>Stephen Stretton[3]</p></td>
+<p>Stephen Stretton[^3_3]</p></td>
 <td><p><strong>IMF</strong></p>
 <p>Simon Black</p>
-<p>Victor Mylonas[4]</p>
+<p>Victor Mylonas[^3_4]</p>
 <p>Ian Parry</p>
 <p>Nate Vernon</p>
 <p>Karlygash Zhunussova</p></td>
@@ -35,152 +29,8 @@
 </table>
 
 
-## Contents {-}
 
-[3 Mitigation overview and methodology
-3-4](#mitigation-overview-and-methodology)
-
-[3.1 Executive Summary and Reviewer Guide
-3-4](#executive-summary-and-reviewer-guide)
-
-[3.1.1 Introduction 3-4](#introduction)
-
-[3.1.2 Summary of Methodology 3-6](#summary-of-methodology)
-
-[3.1.3 Niche & Use cases for CPAT 3-9](#niche-use-cases-for-cpat)
-
-[3.1.4 Critical Policy and Modelling Choices
-3-10](#critical-policy-and-modelling-choices)
-
-[3.1.5 Data choices in CPAT 3-11](#data-choices-in-cpat)
-
-[3.1.6 Testing and validation summary
-3-13](#testing-and-validation-summary)
-
-[3.1.7 Status of upgrades since the last review
-3-14](#status-of-upgrades-since-the-last-review)
-
-[3.1.8 Caveats 3-15](#caveats)
-
-[3.1.9 Notation and Acronyms 3-21](#notation-and-acronyms)
-
-[3.2 Fuel prices, taxes, and subsidies
-3-25](#fuel-prices-taxes-and-subsidies)
-
-[3.2.1 Overview 3-25](#overview)
-
-[3.2.2 Notation 3-26](#notation)
-
-[3.2.3 Base years: Sources of information
-3-27](#base-years-sources-of-information)
-
-[3.2.4 Forecasted years: Construction of data on prices and taxes
-3-28](#forecasted-years-construction-of-data-on-prices-and-taxes)
-
-[3.2.5 Price aggregation 3-29](#price-aggregation)
-
-[3.3 Fuel Consumption 3-31](#fuel-consumption)
-
-[3.3.1 Overview 3-31](#overview-1)
-
-[3.3.2 Notation 3-31](#notation-1)
-
-[3.3.3 Fuel Consumption Dynamics 3-32](#fuel-consumption-dynamics)
-
-[3.3.4 Specific cases 3-33](#specific-cases-1)
-
-[3.3.5 Income and Price Elasticities of Demand
-3-36](#income-and-price-elasticities-of-demand)
-
-[3.4 Power sector models 3-45](#power-sector-models-1)
-
-[3.4.1 Power prices and generation costs
-3-45](#power-prices-and-generation-costs)
-
-[3.4.2 Techno-economic (‘engineer’) power model
-3-56](#techno-economic-engineer-power-model)
-
-[3.4.3 Elasticity model 3-71](#elasticity-model)
-
-[3.4.4 Power data sources and parameter choices
-3-75](#power-data-sources-and-parameter-choices)
-
-[3.5 Emissions 3-89](#emissions-1)
-
-[3.5.1 Overview 3-89](#overview-7)
-
-[3.5.2 Notation 3-90](#notation-5)
-
-[3.5.3 Emission factors 3-91](#emission-factors)
-
-[3.5.4 Energy-related emissions 3-92](#energy-related-emissions)
-
-[3.5.5 Non-energy related emissions 3-93](#non-energy-related-emissions)
-
-[3.5.6 National Determined Contributions
-3-96](#national-determined-contributions)
-
-[3.6 Fiscal revenues 3-98](#fiscal-revenues-1)
-
-[3.6.1 Overview 3-98](#overview-8)
-
-[3.6.2 Notation 3-99](#notation-6)
-
-[3.6.3 Total revenues raised by policy
-3-100](#total-revenues-raised-by-policy)
-
-[3.6.4 Additional information 3-103](#additional-information)
-
-[3.7 Monetized social costs and benefits
-3-104](#monetized-social-costs-and-benefits-1)
-
-[3.7.1 Overview 3-104](#overview-9)
-
-[3.7.2 Energy externalities costs 3-106](#energy-externalities-costs)
-
-[3.7.3 Monetized welfare benefits 3-108](#monetized-welfare-benefits)
-
-[3.8 Validation 3-110](#validation)
-
-[3.8.1 Overview 3-110](#overview-10)
-
-[3.8.2 Panel estimation of energy demand
-3-112](#panel-estimation-of-energy-demand)
-
-[3.8.3 Model comparisons 3-120](#model-comparisons)
-
-[3.8.4 Ex-post studies 3-139](#ex-post-studies)
-
-[3.8.5 Hindcasting 3-145](#_Toc118363053)
-
-[3.8.6 Parameter Sensitivity Analysis
-3-150](#parameter-sensitivity-analysis)
-
-[3.9 Appendices 3-154](#appendices)
-
-[3.9.1 Appendix A - Macro data of CPAT: Sources and codes
-3-154](#appendix-a---macro-data-of-cpat-sources-and-codes)
-
-[3.9.2 Appendix B - Energy balances
-3-155](#appendix-b---energy-balances)
-
-[3.9.3 Appendix C - Prices And Taxes Methodology
-3-162](#appendix-c---prices-and-taxes-methodology)
-
-[3.9.4 Appendix D - Examples of NDCs calculations
-3-176](#appendix-d---examples-of-ndcs-calculations)
-
-[3.9.5 Appendix E – Defaults and parameter options in the mitigation
-module
-3-182](#appendix-e-defaults-and-parameter-options-in-the-mitigation-module)
-
-[3.9.6 Appendix F - Notation in CPAT
-3-191](#appendix-f---notation-in-cpat)
-
-[3.9.7 Appendix G - Data sources 3-194](#appendix-g---data-sources)
-
-[3.9.8 Appendix H – Validation with the EPM model
-3-196](#appendix-h-validation-with-the-epm-model)
+# Mitigation overview and methodology
 
 ## Executive Summary and Reviewer Guide
 
@@ -262,7 +112,7 @@ government policies (including carbon prices).
 
 ![](./03/media/image1.png)
 
-Figure ‑: Overview of the mitigation module
+Figure 3‑1: Overview of the mitigation module
 
 The mitigation module relies on several inputs and provides numerous
 outputs. The module is at the core of CPAT, as its results feed into
@@ -270,11 +120,11 @@ other modules.
 
 ![](./03/media/image2.png)
 
-Figure ‑: Overview of the mitigation module’s inputs and outputs
+Figure 3‑2: Overview of the mitigation module’s inputs and outputs
 
 The general approach to determining baseline fuel consumption and the
 response to a carbon tax or other policy is a simplified, reduced-form
-model based on income and price elasticities.$5$ The changes in energy
+model based on income and price elasticities.[^3_5] The changes in energy
 consumption from the base year are driven by energy prices (including
 the influence of mitigation policy) and real (total) GDP. Real GDP
 (which is the primary driver of the baseline) adjusts to changes in
@@ -305,7 +155,7 @@ temporal match between electricity supply and demand.
 
 The module's outputs include energy consumption by fuel type and sector
 (i.e., buildings, transport, and industry). They are estimated based on
-a fundamental model structure described in an IMF paper.$6$ Energy use
+a fundamental model structure described in an IMF paper.[^3_6] Energy use
 responds to energy prices and real GDP. Additional outputs include
 greenhouse gas (GHG) emissions (i.e., CO<sub>2</sub> and other GHG
 emissions such as leakage methane which represents small amounts of GHG
@@ -377,7 +227,7 @@ policy panel.
 
 ![](./03/media/image3.png)
 
-Figure ‑: Main Settings Panel
+Figure 3‑3: Main Settings Panel
 
 There is the option (**<span class="underline">default to on</span>**)
 to **convert the carbon price into a GHG tax** across all sectors
@@ -397,7 +247,7 @@ assume state plans respond as well as the private sector.
 
 ![](./03/media/image4.png)
 
-Figure ‑: Power Setting Panel
+Figure 3‑4: Power Setting Panel
 
 Fourth, CPAT, by default, has two ad hoc adjustments: a Covid adjustment
 for 2021 and 2022 and a coal share adjustment. The engineer power model
@@ -440,8 +290,8 @@ The following key parameters in CPAT rely on different data sources or
 assumptions:
 
   - Elasticities concerning prices and income are derived from Burke and
-    Csereklyei (2016)$7$ using the relationship from Gertler and
-    others (2016).$8$
+    Csereklyei (2016)[^3_7] using the relationship from Gertler and
+    others (2016).[^3_8]
 
 <!-- end list -->
 
@@ -527,7 +377,7 @@ The validation of the mitigation module is composed of several elements:
 | Analysis performed                                                                                                                                                                                                                           | Main conclusions                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Elasticities estimations. As CPAT is mainly driven by elasticities with respect to prices and economic activity, an econometric analysis is carried out to compare the elasticities used in CPAT and those obtained from empirical analysis. | The empirical validation pointed out that the elasticities with respect to price and economic activity in CPAT tend to be in the same ballpark as those estimated here, with some exceptions related to road transport and the service sector.                                                                                                                                                                                   |
-| Comparison of CPAT against other models.$9$ This analysis comprises comparisons between CPAT and Enerdata, IEA, and EPM models.                                                                                                            | Overall, the comparison analysis shows comparable results between CPAT and other models with a few exceptions most likely linked to different components in fuel aggregation, divergent assumptions regarding nuclear, country-specific divergence (e.g., Russia), or Covid adjustment.                                                                                                                                          |
+| Comparison of CPAT against other models.[^3_9] This analysis comprises comparisons between CPAT and Enerdata, IEA, and EPM models.                                                                                                            | Overall, the comparison analysis shows comparable results between CPAT and other models with a few exceptions most likely linked to different components in fuel aggregation, divergent assumptions regarding nuclear, country-specific divergence (e.g., Russia), or Covid adjustment.                                                                                                                                          |
 | Ex-post studies. This section presents the literature’s estimates of the effectiveness of carbon pricing with respect to emissions and compares them to the CPAT results.                                                                    | When looking into the range of CPAT’s estimates across all sectors, results are comparable with those of the literature. At the sector level, the power sector records the highest decrease in the long run, which is consistent with the literature.                                                                                                                                                                            |
 | Hindcasting. The hindcasting exercise aims at testing CPAT’s forecasts against observed data. It searches to evaluate the performance of the assumptions used when trying to reproduce historical information.                               | For the countries analyzed, CPAT generally fits the trend of observed data. There are some discrepancies and periods where gaps appear. However, for certain periods/countries, discrepancies of volatile magnitudes appear between CPAT projections and observed emissions. While this may result from implementing policies that were not modeled in the exercise, it can also result from discrepancies in price forecasting. |
 | Parameter Sensitivity Analysis. The analysis explores the sensitivity of a set of selected parameters.                                                                                                                                       | The sensitivity of the parameters to CPAT to CO2 emissions ranges from no effect to very sensitive when focusing on the relative changes (i.e., CO2 emissions reduction relative to the default parameter).                                                                                                                                                                                                                      |
@@ -621,7 +471,7 @@ When it comes to prices, CPAT does not model:
     price reform in large countries—parameter values are, however,
     chosen such that the results from the model are broadly consistent
     with those from far more detailed energy models that, to varying
-    degrees, account for these sorts of factors (see Section ).
+    degrees, account for these sorts of factors (see Section 3.8.3).
 
   - **Institutional setup driving prices**. In CPAT, energy demand
     responds to prices in the private sector, although the institutional
@@ -774,14 +624,14 @@ index notation in the same order as described below.
 
 | **Variable**                   | **Index** |
 | ------------------------------ | --------- |
-| Scenario$10$                 | $o$     |
+| Scenario[^3_10]                 | $o$     |
 | Country                        | $c$     |
-| UNFCCC emissions sector$11$  | $u$     |
-| Sector grouping$12$          | $g$     |
+| UNFCCC emissions sector[^3_11]  | $u$     |
+| Sector grouping[^3_12]          | $g$     |
 | Sector                         | $s$     |
-| Fuel and generation type$13$ | $f$     |
+| Fuel and generation type[^3_13] | $f$     |
 | Pollutant                      | $p$     |
-| Year$14$                     | $t$     |
+| Year[^3_14]                     | $t$     |
 
 That means that a typical variable might be defined as follows
 $x_{\text{ocsf},t}$ – with $x$ being specific to scenario, country,
@@ -1005,27 +855,27 @@ that they match our calculations.
 
 | **Notation**                                | **Variable**                                                         | **Unit**                                                    |
 | ------------------------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------- |
-| $\text{p}$                                | Retail price                                                         | USD/Gj                                                      |
-| $\text{P}$                                | Aggregate retail price                                               | USD/Gj                                                      |
-| $\text{sp}$                               | Supply cost                                                          | USD/Gj                                                      |
-| $\text{vat}$                              | Value added tax                                                      | USD/Gj                                                      |
-| $\text{txo}$                              | Excise and all other taxes                                           | USD/Gj                                                      |
-| $\text{fao}$                              | Fixed, Ad valorem and Other Taxes                                    | USD/Gj                                                      |
-| $\text{cs}$                               | Consumer-side subsidy                                                | USD/Gj                                                      |
-| $\text{gp}$                               | Global fuel price                                                    | USD/bbl for oil, /ton for coal and /MMBtu for natural gas   |
+| $p$                                       | Retail price                                                         | US$/Gj                                                      |
+| $P$                                       | Aggregate retail price                                               | US$/Gj                                                      |
+| $\text{sp}$                               | Supply cost                                                          | US$/Gj                                                      |
+| $\text{vat}$                              | Value added tax                                                      | US$/Gj                                                      |
+| $\text{txo}$                              | Excise and all other taxes                                           | US$/Gj                                                      |
+| $\text{fao}$                              | Fixed, Ad valorem and Other Taxes                                    | US$/Gj                                                      |
+| $\text{cs}$                               | Consumer-side subsidy                                                | US$/Gj                                                      |
+| $\text{gp}$                               | Global fuel price                                                    | US$/bbl for oil, $/ton for coal and $/MMBtu for natural gas |
 | $\phi_{\text{CS}}$                        | Phase-out factor for consumer-side subsidies                         |                                                             |
 | $\phi_{\text{PC}}$                        | Phase-out factor for price controls                                  |                                                             |
 | $\text{pcc}$                              | Price control coefficient                                            |                                                             |
 | $\text{Δgp}$                              | Difference between current and previous global prices                |                                                             |
 | $\delta_{\frac{\text{CT}}{\text{ETS}}}$   | Fix growth rate for existing carbon tax or existing ETS permit price |                                                             |
-| $\text{xct}$                              | Existing carbon taxes                                                | USD/Gj                                                      |
-| $\text{xetsp}$                            | Existing ETS permit prices                                           | USD/Gj                                                      |
-| $\text{xcp}$                              | Existing carbon price                                                | USD/Gj                                                      |
-| $\text{nct}$                              | New carbon tax                                                       | USD/Gj                                                      |
-| $\text{netsp}$                            | New ETS price                                                        | USD/Gj                                                      |
-| $\text{ncp}$                              | New carbon price                                                     | USD/Gj                                                      |
-| $\text{NCT}$                              | National price per ton of $CO2$ under a carbon tax                 | USD/ton of CO2                                              |
-| $\text{NETSP}$                            | National price per ton of $CO2$ under an ETS                       | USD/ton of CO2                                              |
+| $\text{xct}$                              | Existing carbon taxes                                                | US$/Gj                                                      |
+| $\text{xetsp}$                            | Existing ETS permit prices                                           | US$/Gj                                                      |
+| $\text{xcp}$                              | Existing carbon price                                                | US$/Gj                                                      |
+| $\text{nct}$                              | New carbon tax                                                       | US$/Gj                                                      |
+| $\text{netsp}$                            | New ETS price                                                        | US$/Gj                                                      |
+| $\text{ncp}$                              | New carbon price                                                     | US$/Gj                                                      |
+| $\text{NCT}$                              | National price per ton of $CO2$ under a carbon tax                 | US$/ton of CO2                                              |
+| $\text{NETSP}$                            | National price per ton of $CO2$ under an ETS                       | US$/ton of CO2                                              |
 | $\text{ef}$                               | Emission factors                                                     | $\text{tC}O_{2}e$/ktoe                                    |
 | $\varphi_{\frac{\text{NCT}}{\text{ETS}}}$ | Sector-fuel coverage for the new policies (Carbon tax or ETS)        | %                                                           |
 | $F$                                       | Use of fuel                                                          | ktoe                                                        |
@@ -1213,7 +1063,7 @@ aggregation of the fuel $f$ use across all sectors in that country.
 ### Overview
 
 CPAT’s mitigation module is based on a fundamental model structure
-described in a recent IMF paper.$15$ Energy use responds to energy
+described in a recent IMF paper.[^3_15] Energy use responds to energy
 prices and real GDP (total real GDP, not per capita GDP). The price
 elasticity includes a ‘usage’ response (e.g., how much each car is used)
 and an ‘energy efficiency’ (e.g., how fuel efficient the car is)
@@ -1236,14 +1086,14 @@ to ensure that they match our calculations.
 | **Notation**                | **Variable**                                                           | **Unit** |
 | --------------------------- | ---------------------------------------------------------------------- | -------- |
 | $F$                       | Use of fuel                                                            | ktoe     |
-| $Y$                       | Total real GDP                                                         | USD      |
-| $p$                       | Retail price                                                           | USD/Gj   |
+| $Y$                       | Total real GDP                                                         | US$      |
+| $p$                       | Retail price                                                           | US$/Gj   |
 | $\alpha$                  | Autonomous annual energy efficiency improvement                        | %        |
 | $\Psi$                    | Covid adjustment factor to energy demand                               | %        |
 | $\epsilon_{Y}$            | Forward-looking real GDP-elasticity of fuel demand                     | %        |
 | $\epsilon_{U}$            | Elasticity of usage of energy products and services                    | %        |
 | $\epsilon_{F}$            | Efficiency price elasticity                                            | %        |
-| $\epsilon_{\text{bio},f}$ | Substitution elasticity between the most cooking fuel used and biomass | USD/Gj   |
+| $\epsilon_{\text{bio},f}$ | Substitution elasticity between the most cooking fuel used and biomass | US$/Gj   |
 | $\text{Ef}f_{f}$          | Natural gas, LPG and kerosene efficiency                               | %        |
 | $\text{Ef}f_{\text{bio}}$ | Biomass efficiency                                                     | %        |
 
@@ -1256,7 +1106,7 @@ $\frac{F_{\text{ocsf},t}}{F_{\text{ocsf},t - 1}} = \left( \frac{1}{1 + \alpha_{\
 
 where the main components of the equation are $F$, the fuel usage in
 ktoe, $Y$, the total real GDP, the prices $p$ as presented in
-Section , $\alpha$, the autonomous annual energy efficiency
+Section 3.2, $\alpha$, the autonomous annual energy efficiency
 improvement and, $\Psi$, a Covid adjustment factor to energy demand
 (see Section 3.3.4.4). Note that additional policies affecting the
 parameter $\alpha$ can be manually added.
@@ -1264,7 +1114,7 @@ parameter $\alpha$ can be manually added.
 ![Figure 36: Dashboard: Additional policy-induced efficiency gains by
 sector](./03/media/image6.png)
 
-Figure ‑: Dashboard: Additional policy-induced efficiency gains by
+Figure 3‑5: Dashboard: Additional policy-induced efficiency gains by
 sector
 
 $\epsilon_{Y}$ denotes the forward-looking real GDP-elasticity of fuel
@@ -1297,7 +1147,7 @@ rebound effects by raising to the power of
 $\left( 1 + \epsilon_{U} \right)$, where $\epsilon_{U}$ is negative.
 
 Note that the term effect on energy efficiency is affected by the shadow
-price$16$ in case non-pricing policy types are implemented, that is
+price[^3_16] in case non-pricing policy types are implemented, that is
 feebates and power feebates, energy efficiency regulations, vehicle fuel
 economy, residential and industrial efficiency regulations. In the
 equation, the shadow price only affects the efficiency margin and not
@@ -1347,7 +1197,7 @@ biomass** in the residential sector is available.
 
 ![Figure 37: Sectors disaggregation in CPAT](./03/media/image7.png)
 
-Figure ‑: Sectors disaggregation in CPAT
+Figure 3‑6: Sectors disaggregation in CPAT
 
 If this option is turned on, a percent change of the most used cooking
 fuel (i.e., natural gas, LPG or kerosene) is transferred to biomass. In
@@ -1363,8 +1213,8 @@ and kerosene ($f = \text{nga},\text{lpg\ and\ ker}$) and biomass
 $\epsilon_{\text{bio},f}*\frac{\text{Ef}f_{\text{bio}}}{\text{Ef}f_{f}}$
 
 The substitution elasticity between the most cooking fuel used and
-biomass, $\epsilon_{\text{bio},f}$, is 0.25 (see Section for more
-information). The efficiency$17$ for each fuel is detailed in the
+biomass, $\epsilon_{\text{bio},f}$, is 0.25 (see Section 3.3.5 for
+more information). The efficiency[^3_17] for each fuel is detailed in the
 table below:
 
 <table>
@@ -1437,7 +1287,7 @@ Estimates can be found at the end of the tab ‘GHG’.
 
 ![Figure 71: Summary of the CPAT v1.0 structure](./03/media/image8.png)
 
-Figure ‑: Summary of the CPAT v1.0 structure
+Figure 3‑7: Summary of the CPAT v1.0 structure
 
 #### Fuel transformation
 
@@ -1465,8 +1315,8 @@ carbon taxes are imposed in this sector.
 #### Overview
 
 The current version of CPAT uses a derived set of elasticities based on
-Burke and Csereklyei (2016)$18$ using the relationship from Gertler
-and others (2016).$19$
+Burke and Csereklyei (2016)[^3_18] using the relationship from Gertler
+and others (2016).[^3_19]
 
 #### Income elasticities
 
@@ -1497,8 +1347,8 @@ below.
 ![Figure 54: Income elasticities: Base income elasticities of energy
 demand in CPAT](./03/media/image9.png)
 
-Figure ‑: Income elasticities: Base income elasticities of energy demand
-in CPAT
+Figure 3‑8: Income elasticities: Base income elasticities of energy
+demand in CPAT
 
 Base income elasticities for sectors are selected based on Burke and
 Csereklyei (2016), which covers 132 countries from 1960-2010.
@@ -1514,7 +1364,7 @@ by sector (left panel, mean estimated elasticities 1960-2010) and by
 development levels (right panel, unadjusted and adjusted elasticities
 with respect to log GDP 1985-2010)](./03/media/image10.png)
 
-Figure ‑: The relationship of fuel demand to GDP across countries by
+Figure 3‑9: The relationship of fuel demand to GDP across countries by
 sector (left panel, mean estimated elasticities 1960-2010) and by
 development levels (right panel, unadjusted and adjusted elasticities
 with respect to log GDP 1985-2010) – Source: left panel from Burke and
@@ -1554,7 +1404,7 @@ around $22,000 per capita).
 ![Figure 56: Per capita GDP adjusted income elasticities, selected
 fuels/sectors by GDP (left) and log GDP (right)](./03/media/image11.png)
 
-Figure ‑: Per capita GDP adjusted income elasticities, selected
+Figure 3‑10: Per capita GDP adjusted income elasticities, selected
 fuels/sectors by GDP (left) and log GDP (right) – Source: IMF staff
 using Burke and Csereklyei (2016), Gertler and others (2016), and
 various other sources.
@@ -1584,12 +1434,12 @@ intensity of use from existing capital-consuming goods like vehicles
 goods (‘efficiency and extensive margin’). The two effects combined less
 the rebound effect (described later) correspond to the total price
 elasticity of demand, which is parametrized to the empirical
-literature$20$.
+literature[^3_20].
 
-Table ‑ Price elasticities of energy demand in CPAT – Source: IMF staff
-using various sources. Tables show price elasticities used for developed
-countries. For developing countries, extensive margin elasticities are
-uniformly increased (in absolute terms) by 0.1.
+Table 3‑1 Price elasticities of energy demand in CPAT – Source: IMF
+staff using various sources. Tables show price elasticities used for
+developed countries. For developing countries, extensive margin
+elasticities are uniformly increased (in absolute terms) by 0.1.
 
 ![Figure 57: Price elasticities of energy demand in
 CPAT](./03/media/image12.png)
@@ -1601,7 +1451,7 @@ seven fuels, and four sectors (refer to Table A for descriptive
 statistics). ‘Target’ estimates of elasticities for fuels and sectors
 are estimated, assuming that the base is the transport sector, plus
 deviations for the residential, industrial and services sectors (Table
-B)$21$. For any statistically insignificant values for fuels within
+B)[^3_21]. For any statistically insignificant values for fuels within
 sectoral regressions (natural gas in residential, for example), it is
 assumed that the difference between sectoral and base elasticities equal
 that sectors’ general elasticities multiplied by a scalar for all energy
@@ -1619,7 +1469,7 @@ shown in Table C, when weighting for developed and developing countries’
 emissions, elasticities in CPAT are very similar (within 10%) to these
 target elasticities.
 
-Table ‑: Comparison of price elasticities
+Table 3‑2: Comparison of price elasticities
 
 ![Figure 58: Comparison of price elasticities](./03/media/image13.png)
 
@@ -1678,7 +1528,7 @@ pollution module. These cross-price elasticities (biomass with respect
 to LPG and kerosene, as well gasoline with respect to diesel) are
 parameterized to the same broad literature review.
 
-Table ‑: Cross-price elasticities of substitution in CPAT
+Table 3‑4: Cross-price elasticities of substitution in CPAT
 
 ![Figure 60: Cross-price elasticities of substitution in
 CPAT](./03/media/image14.png)
@@ -1689,7 +1539,7 @@ The annual rate of exogenous technological change (that is, not induced
 by policies under consideration in CPAT) are set at between 0.5 and 1
 percent per year for each fuel-sector pair.
 
-Table ‑: Exogenous efficiency improvements in energy-consuming capital
+Table 3‑5: Exogenous efficiency improvements in energy-consuming capital
 goods (cars, buildings, factories)
 
 ![Figure 61: Exogenous efficiency improvements in energy-consuming
@@ -1706,7 +1556,7 @@ improvements depends on the fuel-sector pair and its corresponding
 intensive margin and efficiency, but broadly it is between 20% to 60%
 across fuels and sectors.
 
-Table ‑: Rebound effect from exogenous efficiency improvements (% of
+Table 3‑6: Rebound effect from exogenous efficiency improvements (% of
 emissions reduction reduced)
 
 ![Figure 62: Rebound effect from exogenous efficiency improvements (% of
@@ -1828,7 +1678,7 @@ main differences are as follows:
     used in previous versions of CPAT and IMF tools.
 
   - **The ‘engineer model'** explicitly models the capacity of different
-    generation types, with capacity$22$ expanding to meet desired
+    generation types, with capacity[^3_22] expanding to meet desired
     power demand. Flexible capacity (gas and coal) is allocated
     according to marginal price, with a sigmoidal function of relative
     price. Investment is also a function of levelized cost, with a
@@ -1881,7 +1731,7 @@ In addition, we impose an implicit price of coal relative to gas,
 reflecting unobserved environmental regulations on coal and the superior
 flexibility of gas. These aspects are not fully captured in a model as
 simple as this. We calibrate this price on observed coal shares and
-future (IEA) projections (see Section ).
+future (IEA) projections (see Section 3.4.2.4).
 
 End-user (industrial and residential) power prices additionally have the
 following components:
@@ -1914,7 +1764,7 @@ The first table gives overarching concepts relating to power generation.
 | $\text{cf}$         | Capacity factor                                                                      | %        |
 | $\text{cap}$        | Capacity                                                                             | MWy      |
 | $\text{PV}$         | Present value of costs                                                               |          |
-| $\text{tic}$        | Levelized total investment costs                                                     | USD/kWh  |
+| $\text{tic}$        | Levelized total investment costs                                                     | US$/kWh  |
 | $\text{wacc}$       | Weighted Average Cost of Capital                                                     | %        |
 | $\text{lif}$        | Lifetime                                                                             | Years    |
 | $\text{dlf}$        | Discounted lifetime                                                                  | Years    |
@@ -1926,35 +1776,35 @@ investment types (and also, indirectly the power price).
 
 | **Notation**      | **Variable**                                        | **Unit** |
 | ----------------- | --------------------------------------------------- | -------- |
-| $\text{fc}$     | Projected unit fuel costs                           | USD/kWh  |
-| $\text{opv}$    | Variable costs for operating and maintenance (OpEx) | USD/kWh  |
-| $\text{vc}$     | Current variable costs                              | USD/kWh  |
-| $\text{cax}$    | Capital cost (CapEx)                                | USD/kW   |
-| $\text{opf}$    | Fixed costs for operating and maintenance (OpEx)    | USD/kW   |
-| $\text{tfc}$    | Fixed OpEx                                          | USD/kWy  |
-| $\text{sto}$    | Storage cost                                        | USD/kWh  |
-| $\text{dtc}$    | Decommissioning costs                               | USD/kWh  |
-| $\text{ipc}$    | Implicit price component for coal                   | USD/kWh  |
-| $\text{pusRen}$ | Per-unit renewable subsidies                        | USD/kWh  |
-| $\text{LCOE}$   | Levelized cost of electricity                       | USD/kWh  |
+| $\text{fc}$     | Projected unit fuel costs                           | US$/kWh  |
+| $\text{opv}$    | Variable costs for operating and maintenance (OpEx) | US$/kWh  |
+| $\text{vc}$     | Current variable costs                              | US$/kWh  |
+| $\text{cax}$    | Capital cost (CapEx)                                | US$/kW   |
+| $\text{opf}$    | Fixed costs for operating and maintenance (OpEx)    | US$/kW   |
+| $\text{tfc}$    | Fixed OpEx                                          | US$/kWy  |
+| $\text{sto}$    | Storage cost                                        | US$/kWh  |
+| $\text{dtc}$    | Decommissioning costs                               | US$/kWh  |
+| $\text{ipc}$    | Implicit price component for coal                   | US$/kWh  |
+| $\text{pusRen}$ | Per-unit renewable subsidies                        | US$/kWh  |
+| $\text{LCOE}$   | Levelized cost of electricity                       | US$/kWh  |
 
 This table denotes variables used to calculate the price of electricity.
 
 | **Notation**               | **Variable**                                          | **Unit** |
 | -------------------------- | ----------------------------------------------------- | -------- |
-| $\text{hrp}$             | Historical retail prices in the electricity sector    | USD/Gj   |
-| $\text{gnc}$             | Current generation cost                               | USD/kWh  |
-| $\text{fix}$             | Amortized fixed costs                                 | USD/kWh  |
-| $\text{ca}x^{\text{av}}$ | Weighted average CapEx                                | USD/kW   |
-| $\text{acc}$             | Yearly amortization of capital costs                  | USD/kWh  |
-| $\text{int}$             | Interest costs                                        | USD/kWh  |
-| $\text{dec}$             | Yearly amortization of decommissioning costs          | USD/kWh  |
-| $sp_{T}$                 | Supply power price determined in the engineer model   | USD/kWh  |
-| $\text{tmc}$             | Transmission cost                                     | USD/kWh  |
-| $mu^{T}$                 | Markup used in the calculation of supply power prices | USD/kWh  |
-| $\text{pex}$             | Power excise                                          | USD/kWh  |
-| $\text{reb}$             | Rebate                                                | USD/kWh  |
-| $p^{T}$                  | End-user power price (engineer model)                 | USD/kWh  |
+| $\text{hrp}$             | Historical retail prices in the electricity sector    | US$/Gj   |
+| $\text{gnc}$             | Current generation cost                               | US$/kWh  |
+| $\text{fix}$             | Amortized fixed costs                                 | US$/kWh  |
+| $\text{ca}x^{\text{av}}$ | Weighted average CapEx                                | US$/kW   |
+| $\text{acc}$             | Yearly amortization of capital costs                  | US$/kWh  |
+| $\text{int}$             | Interest costs                                        | US$/kWh  |
+| $\text{dec}$             | Yearly amortization of decommissioning costs          | US$/kWh  |
+| $sp_{T}$                 | Supply power price determined in the engineer model   | US$/kWh  |
+| $\text{tmc}$             | Transmission cost                                     | US$/kWh  |
+| $mu^{T}$                 | Markup used in the calculation of supply power prices | US$/kWh  |
+| $\text{pex}$             | Power excise                                          | US$/kWh  |
+| $\text{reb}$             | Rebate                                                | US$/kWh  |
+| $p^{T}$                  | End-user power price (engineer model)                 | US$/kWh  |
 
 #### Power generation cost and price concepts
 
@@ -1984,7 +1834,7 @@ We use four different power generation cost/price concepts in CPAT:
 #### Concept 1: Current variable costs
 
 Variable costs are used in the dispatch decision directly between gas
-and coal.$23$
+and coal.[^3_23]
 
 Current variable costs are defined as the sum of the following cost
 components:
@@ -2006,12 +1856,12 @@ where:
 
 ![](./03/media/image17.png)
 
-Figure ‑: Dashboard: Use Spot Fuel Prices in Engineer Power Model
+Figure 3‑11: Dashboard: Use Spot Fuel Prices in Engineer Power Model
 
   - $\text{ip}c_{\text{cft}}$ denotes an implicit price component for
     coal. Note that this latter component could be turned off in the
     settings and not taken into account (for more information, see
-    Section ).
+    Section 3.4.2.4).
 
 #### Concept 2: Levelized costs of generation (Forward-looking)
 
@@ -2142,7 +1992,7 @@ renewable subsidy under a baseline and policy scenarios:
 
 ![](./03/media/image18.png)
 
-Figure ‑: Dashboard: Renewable subsidy (USD/kwh in nominal terms)
+Figure 3‑12: Dashboard: Renewable subsidy ($/kwh in nominal terms)
 
 After the introduction of the carbon pricing policy, the current total
 cost is:
@@ -2243,10 +2093,10 @@ Where:
 
 ![](./03/media/image19.png)
 
-Figure ‑: Dashboard: WACC Settings
+Figure 3‑13: Dashboard: WACC Settings
 
   - $\text{dec}$ denotes the yearly amortization of decommissioning
-    costs$24$ per kWh produced:
+    costs[^3_24] per kWh produced:
     $\frac{\text{dt}c_{B,\text{cft}}}{cf_{B,\text{cf}}*365*24*\text{li}f_{f}}$
     where $\text{dt}c_{\text{cft}}$ denotes the decommissioning and
     transmission costs in USD per kW (for more information see Section
@@ -2298,7 +2148,7 @@ $sp_{B,\text{cg}}^{T} = \text{gn}c_{B,\text{ct}}^{\text{av}} + \text{tmc}$
 
 An allowance of $15/MWh and $40/MWh was added to account for
 transmission and distribution costs for industrial and residential uses,
-respectively$25$.
+respectively[^3_25].
 
 A markup $\text{mu}$ is then calculated specifically for residential
 and industrial electricity prices to equalize the starting year price
@@ -2472,8 +2322,8 @@ to ensure that they match our calculations.
 | **Notation**                                | **Variable**                                                                                                                                                       | **Unit**                            |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
 | $F$                                       | Use of fuel                                                                                                                                                        | ktoe                                |
-| $Y$                                       | Total real GDP                                                                                                                                                     | USD                                 |
-| $p$                                       | Retail price                                                                                                                                                       | USD/Gj                              |
+| $Y$                                       | Total real GDP                                                                                                                                                     | US$                                 |
+| $p$                                       | Retail price                                                                                                                                                       | US$/Gj                              |
 | $\alpha$                                  | Autonomous annual energy efficiency improvement                                                                                                                    | %                                   |
 | $\Psi$                                    | Covid adjustment factor to energy demand                                                                                                                           | %                                   |
 | $\epsilon_{Y}$                            | Forward-looking real GDP-elasticity of fuel demand                                                                                                                 | %                                   |
@@ -2491,8 +2341,8 @@ to ensure that they match our calculations.
 | $\text{residualreqge}n_{COA/GAS}$         | residual power generation from coal and gas                                                                                                                        | GWh                                 |
 | $\text{maxC}f_{\text{GAS},\text{COA}}$    | Maximum capacity for coal/gas                                                                                                                                      | GWh                                 |
 | $\lambda_{f}$                             | Proportion of the residual generation (after the ‘minimum coal’ and minimum gas’ allocation given limited capacity of the other) allocated to each of coal and gas | GWh                                 |
-| $\text{vc}$                               | Current variable costs                                                                                                                                             | USD/kWh                             |
-| $vc_{\text{lc}}$                          | Lowest current variable costs between coal and natural gas                                                                                                         | USD/kWh                             |
+| $\text{vc}$                               | Current variable costs                                                                                                                                             | US$/kWh                             |
+| $vc_{\text{lc}}$                          | Lowest current variable costs between coal and natural gas                                                                                                         | US$/kWh                             |
 | $\text{cf}$                               | Capacity factor                                                                                                                                                    | %                                   |
 | $\text{cap}$                              | Capacity                                                                                                                                                           | MWy                                 |
 | $\nu$                                     | Thermal efficiency                                                                                                                                                 | %                                   |
@@ -2506,8 +2356,8 @@ to ensure that they match our calculations.
 | $\text{re}p_{\text{COA}}$                 | Proportion of coal replacement                                                                                                                                     | %                                   |
 | $\zeta$                                   | New investments permitted                                                                                                                                          | MWh                                 |
 | $\text{ivp}$                              | Proportion of new investments                                                                                                                                      | %                                   |
-| $\text{tic}$                              | Levelized total investment costs                                                                                                                                   | USD/kWh                             |
-| $\text{ti}c_{\text{lc}}$                  | Lowest levelized total investment costs between coal and natural gas                                                                                               | USD/kWh                             |
+| $\text{tic}$                              | Levelized total investment costs                                                                                                                                   | US$/kWh                             |
+| $\text{ti}c_{\text{lc}}$                  | Lowest levelized total investment costs between coal and natural gas                                                                                               | US$/kWh                             |
 | $v$                                       | Variable renewable energy (VRE)                                                                                                                                    | %                                   |
 | $\text{sst}$                              | Short-term storage                                                                                                                                                 | Hours                               |
 | $\text{slt}$                              | Long-term storage                                                                                                                                                  | MW/MW, i.e. dimensionless units (%) |
@@ -2529,9 +2379,9 @@ weighted total generation cost, which is lagged by one year to avoid
 circularity issue.
 
 A Covid adjustment factor to power demand $\Psi$ can be taken into
-account (see Section - note this is specifically calibrated for the
-engineer model). Note that additional policies affecting the parameter
-$\alpha$ can be manually added.
+account (see Section 3.3.4.4 - note this is specifically calibrated for
+the engineer model). Note that additional policies affecting the
+parameter $\alpha$ can be manually added.
 
 That power demand from the elasticity model can also be used (it is very
 similar, just not disaggregated by sector):
@@ -2539,7 +2389,7 @@ similar, just not disaggregated by sector):
 ![Figure 41: Mitigation: Use Elasticity Model Power Demand In Engineer
 Model](./03/media/image20.png)
 
-Figure ‑: Mitigation: Use Elasticity Model Power Demand In Engineer
+Figure 3‑14: Mitigation: Use Elasticity Model Power Demand In Engineer
 Model
 
 The total generation requirement (in ktoe), $g_{\text{oc},t}$, is
@@ -2570,7 +2420,7 @@ parameter can be adjusted in the dashboard:
 
 ![](./03/media/image21.png)
 
-Figure ‑: Dashboard: K parameters
+Figure 3‑15: Dashboard: K parameters
 
 The formula of the multilogit is as follows:
 
@@ -2617,7 +2467,7 @@ to 90%, but the user can adjust it in the dashboard:
 ![Figure 44: Dashboard: Use energy balances or (CPAT) energy consumption
 data](./03/media/image22.png)
 
-Figure ‑: Energy balances and energy consumption
+Figure 3‑16: Energy balances and energy consumption
 
 For example, for coal:
 
@@ -2669,7 +2519,7 @@ capacity is equal to expected generation capacity and is defined as
 capacity multiplied by the expected capacity factor -– i.e., the
 investment is set such that the capacity is sufficient to cover expected
 peak demand, which is estimated using the power demand equation (see
-Section ).
+Section 3.4.2.2).
 
 The economic system is expected to plan ahead a few years in advance so
 that investment takes place to meet the projected demand at the start of
@@ -2693,7 +2543,7 @@ For coal, it is worth noting that planned retirement is adjusted based
 on the coal power plant tracker, which provides power plant data level
 for a number of countries. Therefore, based on these data, the
 retirement year of each power plant is determined and the capacity
-associated is determined from 2022 to 2050$26$. When data do not
+associated is determined from 2022 to 2050[^3_26]. When data do not
 exist, the above formula is used.
 
 In addition to planned retirement, cost-based early retirement coal is
@@ -2756,8 +2606,8 @@ $\text{ti}c_{P,\text{cft}}^{\text{lc}}$ define, respectively, the
 levelized investment cost and the lowest levelized investment cost
 across fuel types. It is important to note that renewables face a
 penalty at high levels (i.e. above 75% penetration) as an additional
-‘storage systems cost’ could increase costs (see Section on Long-term
-storage).
+‘storage systems cost’ could increase costs (see Section 3.4.2.5 on
+Long-term storage).
 
 Different options are possible for whether new investments are permitted
 ($iv^{\text{new}}$):
@@ -2778,7 +2628,7 @@ Different options are possible for whether new investments are permitted
 
 ![](./03/media/image23.png)
 
-Figure ‑: Dashboard: Plan or enable new investment
+Figure 3‑17: Dashboard: Plan or enable new investment
 
 Maximum effective investments, $\text{iv}^{\max},$ are then capped by
 non-VRE and VRE limits ($\text{VRE}$):
@@ -2800,12 +2650,12 @@ UserDefined and CountrySpecific (currently set to 2% – except for China
 ![](./03/media/image24.png)![Figure 46: Dashboard: Scale up rate
 parameter](./03/media/image25.png)
 
-Figure ‑: Dashboard: Scale up rate parameters (right panel: non-VRE
+Figure 3‑18: Dashboard: Scale up rate parameters (right panel: non-VRE
 rate; left panel: VRE rates)
 
 ![](./03/media/image26.png)
 
-Figure ‑: Dashboard: Scale up rate specification for wind and solar
+Figure 3‑19: Dashboard: Scale up rate specification for wind and solar
 
   - Least-cost merit order
 
@@ -2864,7 +2714,7 @@ which means that the factor adjustment cannot be less (more) than -25%
 
 ![](./03/media/image27.png)
 
-Figure ‑: Dashboard: Covid Adjustment
+Figure 3‑20: Dashboard: Covid Adjustment
 
 Second, **systems costs are currently inferred by using a calibration on
 the share of coal in the electricity generation.** This exercise is
@@ -2881,7 +2731,7 @@ for information only.
 
 ![](./03/media/image28.png)
 
-Figure ‑: Dashboard: Covid Adjustment
+Figure 3‑21: Dashboard: Covid Adjustment
 
 For the years 2019 and 2020, the following steps are taken:
 
@@ -2909,7 +2759,7 @@ price component.
 
 ![Figure 73: Dashboard: Coal share calibration](./03/media/image29.png)
 
-Figure ‑: Dashboard: Coal share calibration
+Figure 3‑22: Dashboard: Coal share calibration
 
 If the “Manual” option is selected, the user overrides the implicit
 price component with their choice.
@@ -2917,7 +2767,7 @@ price component with their choice.
 ![Figure 74: Dashboard: Coal share calibration
 (manual)](./03/media/image30.png)
 
-Figure ‑: Dashboard: Coal share calibration (manual)
+Figure 3‑23: Dashboard: Coal share calibration (manual)
 
 #### Storage decision
 
@@ -2959,7 +2809,7 @@ needs are calculated in hours, which means kWh of storage per kW of
 average generation (not peak capacity).
 
 The model uses rounded versions of a parameterization derived from
-global data$27$. The model assumes that the total number of storage
+global data[^3_27]. The model assumes that the total number of storage
 for a 100% VRE system is 9 hours, with a quadratic form. We fit the
 short-term storage needed (in hours) as a (conservative) quadratic
 function of the VRE. We allocate some percentage of this (currently
@@ -3007,7 +2857,7 @@ the dashboard:
 
 ![](./03/media/image31.png)
 
-Figure ‑: Dashboard: Percent allocation of LT storage costs to VRE
+Figure 3‑24: Dashboard: Percent allocation of LT storage costs to VRE
 
 Given its interseasonal storage and geographic independence, we focus on
 the costs of electrolysers for storage. This storage cost is thus
@@ -3086,7 +2936,7 @@ renewables without storage is falling.
 #### Overview
 
 The elasticity-based model is derived from an IMF spreadsheet tool, with
-a methodology described in an IMF board paper$28$. The CPAT mitigation
+a methodology described in an IMF board paper[^3_28]. The CPAT mitigation
 module, and the IMF tool on which it is based, are primarily
 elasticity-based models, meaning that future fuel demand is dependent on
 projected total real GDP growth, and upon future energy prices, modified
@@ -3106,8 +2956,8 @@ to ensure that they match our calculations.
 | **Notation**                 | **Variable**                                                                                   | **Unit** |
 | ---------------------------- | ---------------------------------------------------------------------------------------------- | -------- |
 | $E$                        | Total quantity of power demanded by sector                                                     | GWh      |
-| $Y$                        | Total real GDP                                                                                 | USD      |
-| $p$                        | Retail price                                                                                   | USD/Gj   |
+| $Y$                        | Total real GDP                                                                                 | US$      |
+| $p$                        | Retail price                                                                                   | US$/Gj   |
 | $\alpha$                   | Autonomous annual energy efficiency improvement                                                | %        |
 | $\Psi$                     | Covid adjustment factor to energy demand                                                       | %        |
 | $\epsilon_{Y}$             | Forward-looking real GDP-elasticity of fuel demand                                             | %        |
@@ -3115,7 +2965,7 @@ to ensure that they match our calculations.
 | $\epsilon_{F}$             | Efficiency price elasticity                                                                    | %        |
 | $g$                        | electricity generation                                                                         | GWh      |
 | $\Phi$                     | Production share                                                                               | %        |
-| $\text{gn}c^{*}$           | Total unit cost adjusted of thermal efficiency                                                 | USD/kWh  |
+| $\text{gn}c^{*}$           | Total unit cost adjusted of thermal efficiency                                                 | US$/kWh  |
 | $\epsilon_{\widetilde{E}}$ | Conditional own-price elasticity of generation from fuel $f$ with respect to generation cost | %        |
 | $\delta^{\text{add}}$      | Additional share of electricity generation attributed to non-nuclear and non-hydro energy      | %        |
 | $\text{TotExcess}$         | Total surplus of nuclear and hydro power generation to be redistributed                        | %        |
@@ -3133,14 +2983,15 @@ given the IMF paper mentioned above.
 ![Figure 49: Dashboard: Use Spot Fuel Prices in Engineer Power
 Model](./03/media/image32.png)
 
-Figure ‑: Dashboard: Use old or new generation costs in elasticity model
+Figure 3‑25: Dashboard: Use old or new generation costs in elasticity
+model
 
 Renewable producer subsidies under a baseline scenario, as well as under
 the policy scenario, can be specified in the dashboard:
 
 ![](./03/media/image33.png)
 
-Figure ‑: Dashboard: Renewable producer subsidies under a baseline
+Figure 3‑26: Dashboard: Renewable producer subsidies under a baseline
 scenario
 
 #### Total power demand
@@ -3177,7 +3028,7 @@ expressed as total energy consumption net of fuel transformation and
 transportation. The index $E$ denotes the sector Electricity.
 
 For 2020, estimates are based on the previous year’s data adjusted for a
-one-time exogenous shock, i.e., Covid (see Section ).
+one-time exogenous shock, i.e., Covid (see Section 3.3.4.4).
 
 $\frac{E_{\text{oct}}}{E_{\text{oc},t - 1}} = \left( 1 + \alpha \right)^{- \left( 1 + \epsilon_{U} \right)}\left( 1 + 0.5*\Psi_{\text{ct}} \right)\left( \frac{p_{\text{cEt}}}{p_{\text{cE},t - 1}} \right)^{\epsilon_{U,\text{cE}}}\left( \frac{p_{\text{cEt}}}{p_{\text{cE},t - 1}} \right)^{\epsilon_{F,\text{cE}}}\left( \frac{Y_{\text{ct}}}{Y_{c,t - 1}} \right)^{\epsilon_{G,\text{cE}}}$
 
@@ -3266,8 +3117,8 @@ The fuel use is equal to the electricity generated multiplied by an
 efficiency improvement over time $\alpha_{f}$ specific to the
 generation type $f$.
 
-###   
-Power data sources and parameter choices
+###  Power data sources and parameter choices
+
 
 #### Overview
 
@@ -3287,7 +3138,7 @@ with their definition.
 The table below presents the different data sources used to estimate
 power plant characteristics.
 
-Table ‑: Power characteristics and data sources
+Table 3‑7: Power characteristics and data sources
 
 ![Figure 51: Data mapping and description of data
 sources](./03/media/image34.png)
@@ -3352,7 +3203,7 @@ $\nu_{\text{cf}} = \frac{g_{\text{cf},t_{0}}}{F_{\text{cEf},t_{0}}}$
 
 For coal, natural gas, oil, nuclear, and biomass, where
 $F_{\text{ocEf},t_{0}}$ is the fuel f used for the generation of
-electricity $g_{\text{ocf},t_{0}}$$29$$,$ in the base year,
+electricity $g_{\text{ocf},t_{0}}$[^3_29]$,$ in the base year,
 baseline scenario. For solar, wind, hydro, and other renewables,
 efficiency is set by convention to 1. As mentioned before, we use Net
 Calorific Values exclusively.
@@ -3437,7 +3288,7 @@ Country</p>
 <p>Evolution of CapEx</p>
 </blockquote></td>
 <td><blockquote>
-<p>Following the work of JRC (see Ioannis Tsiropoulos, Dalius Tarvydas, and Andreas Zucker 2018), the learning curve method to forecast CAPEX for renewable energies from 2023 to 2040 is applied to each CPAT region, China, Japan, Korea and worldwide. The other technologies, i.e. coal, oil, natural gas, and nuclear, are not subject to a learning rate nor to different scenarios and are assumed to be constant over time.</p>
+<p>In the case of wind and solar, we use the learning curve method to forecast global CAPEX from 2023 to 2050. We use capacity projections from the IEA Stated Policy (STEPS) and Net Zero (NZE) scenarios, then experience Parameters extracted from Way et al., 2022 . Following the work of JRC (see Ioannis Tsiropoulos, Dalius Tarvydas, and Andreas Zucker 2018), the learning curve method to forecast CAPEX for renewable energies other than wind and solar from 2023 to 2040 is applied to each CPAT region, China, Japan, Korea and worldwide. The other technologies, i.e. coal, oil, natural gas, and nuclear, are not subject to a learning rate nor to different scenarios and are assumed to be constant over time.</p>
 </blockquote></td>
 <td><blockquote>
 <p>Index (base year: 2019)</p>
@@ -3448,7 +3299,7 @@ Regional<br />
 Country: China, Japan, Korea</p>
 </blockquote></td>
 <td><blockquote>
-<p>Enerdate, IRENA, Breyer, JRC and NREL</p>
+<p>Enerdate, IEA, Way et al. 2022, IRENA, Breyer, JRC and NREL</p>
 </blockquote></td>
 </tr>
 <tr class="odd">
@@ -3580,7 +3431,7 @@ the heat rate is widely spread and is expressed in British Thermal Units
 
 ![](./03/media/image35.png)
 
-Figure ‑: Data mapping and description of data sources
+Figure 3‑27: Data mapping and description of data sources
 
 There are two ways of calculating thermal efficiency, that is in **net
 or gross calorific value**. Calorific value is an essential parameter to
@@ -3627,7 +3478,7 @@ adjustments have been made, whereas orange cells provide adjustments
 made in CPAT. As the study of Bogdanov et al. (2019) is based on the
 data sources listed in the table, it is not incorporated in the table.
 
-Table ‑: Assumption underlying the construction of power data
+Table 3‑8: Assumption underlying the construction of power data
 
 ![Figure 53: Assumption underlying the construction of power
 data](./03/media/image36.png)
@@ -3796,7 +3647,7 @@ overweight one data source over another, the averages are calculated by
 data source, as a data source may provide different data at a given time
 and for the same technology because data are project-based. In a second
 step, the calculation of averages is deployed in the following order of
-priority: by country, by CPAT region$30$, and globally. More
+priority: by country, by CPAT region[^3_30], and globally. More
 specifically, to construct a dataset for the year 2019:
 
   - CapEx is estimated based on 2019 data points only; 2019 is retained
@@ -3807,10 +3658,21 @@ specifically, to construct a dataset for the year 2019:
     This approach is reasonable because these variables do not vary
     greatly from year to year.
 
-**Forecasting CAPEX**: Following the work of JRC (see Tsiropoulos et
-al., 2018), the learning curve method to forecast CAPEX for renewable
-energies from 2023 to 2040$31$ is applied to each CPAT region, China,
-Japan, Korea$32$ and worldwide. The other technologies, i.e. coal,
+**Forecasting CAPEX**: In the case of wind and solar, we use the
+learning curve method to forecast global CAPEX from 2023 to 2050. The
+underlying idea is to highlight the cross-country transferability of a
+country's learning effects. For wind and solar only, we use capacity
+projections from the IEA Stated Policy (STEPS)[^3_31] and Net Zero
+(NZE)[^3_32] scenarios, then experience Parameters extracted from Way et
+al., 2022[^3_33].
+
+We set the values of 2020, 2021, 2022 and 2023 of wind and solar global
+CAPEX equal to the 2019 values.
+
+Following the work of JRC (see Tsiropoulos et al., 2018), the learning
+curve method to forecast CAPEX for renewable energies different of wind
+and solar from 2023 to 2040[^3_34] is applied to each CPAT region, China,
+Japan, Korea[^3_35] and worldwide. The other technologies, i.e. coal,
 oil, natural gas, and nuclear, are not subject to a learning rate nor to
 different scenarios and are assumed to be constant over time.
 
@@ -3845,7 +3707,27 @@ $\text{LR} = 1 - 2^{\varepsilon}$
 where the parameter $2^{\varepsilon}$ is known as the learning rate
 ratio or progress ratio and reflects the slope of the learning curve.
 
-Similarly, to JRC, the approach taken is built around three scenarios:
+In the case of wind and solar, we consider four different
+scenarios[^3_36]:
+
+  - The **low scenario**: we use the IEA STEPS scenario for capacity
+    projections data, and a low learning rate parameter (equal to mean –
+    standard deviation ; 0.276 for Solar, 0.153 for Wind)
+
+  - The **medium scenario**: we use the IEA STEPS scenario for capacity
+    projections data, and a medium learning rate parameter (0.319 for
+    Solar, 0.194 for Wind)
+
+  - The **high scenario**: we use the IEA NZE scenario for capacity
+    projections data, and a medium learning rate parameter (0.319 for
+    Solar, 0.194 for Wind)
+
+  - The **very high scenario**: we use the IEA NZE scenario for capacity
+    projections data, and a high learning rate parameter (equal to mean
+    + standard deviation ; 0.362 for Solar, 0.235 for Wind)
+
+Similarly, to JRC for renewables other than wind and solar, the approach
+taken is built around three scenarios:
 
   - The **low scenario** is associated with a 0.5% increase of the
     installed capacity. A low scenario covers a low renewable supply
@@ -3982,16 +3864,16 @@ respectively, and $\text{Ca}p_{t}$ standing for the forecast installed
 capacity for the year the CapEx is estimated ($\text{Cos}t_{t}$).
 
 Finally, renewable technologies are more metals and minerals than
-non-renewables$33$ hence rising metals/minerals costs can be expected
+non-renewables[^3_37] hence rising metals/minerals costs can be expected
 to increase the relative cost of new renewables investment. Considering
 the surge in international metals and mineral prices in 2021-2,
 projected capital expenditure costs for investment in new renewable and
 non-renewable capacity were therefore upscaled. Metals and all other
-commodities are expected to increase by about 2 times in 2022-3$34$
+commodities are expected to increase by about 2 times in 2022-3[^3_38]
 compared to 2020 levels and assuming that these primary inputs into
 renewables account for roughly one tenth of the total of renewables
 up-front investment costs, which are themselves about 75% of total costs
-for renewables,$35$ the increase of CapEx for renewables would be
+for renewables,[^3_39] the increase of CapEx for renewables would be
 about 15% in 2022-3 compared to 2020. However, as a part of this
 increase might be captured in 2020-1 data, the CapEx increase in new
 renewable and non-renewable capacity was upscaled by 10% and 5% in 2022
@@ -4010,11 +3892,11 @@ $\text{TotalCost}\left( \frac{\text{USD}}{\text{kWh}} \right) = \text{EnergyCost
 Several types of battery exist, typically varying from 1h to 4h storage
 battery. In CPAT, costs for battery correspond to 2h storage battery.
 Forecast storage costs are based on the work of Cole et al. (2021) and
-Augustine & Blair (2021)$36$. The authors base their estimations on
+Augustine & Blair (2021)[^3_40]. The authors base their estimations on
 current literature and data for Li-Ion Battery Storage, 60 MW, 240 MWh
 storage (4 hours) in the United-States are used as representative data.
 Costs for 2h storage battery are then estimated based on the above
-formula and expressed in kW$37$. In particular, all values are given
+formula and expressed in kW[^3_41]. In particular, all values are given
 in 2019 U.S. dollars, using the Consumer Price Index (BLS, 2020) for
 dollar year conversions. Projections use an inflation assumption of 2.5%
 per year. In the same vein as for wind and solar, three scenarios are
@@ -4041,10 +3923,10 @@ The following data sources are used in CPAT:
     decommissioning costs based on surveys answered by nuclear power
     plants located in Europe. Data are expressed at 2013 U.S. dollar
     prices;
-  - Duke Energy Corporation$38$ is a nuclear power plant that
+  - Duke Energy Corporation[^3_42] is a nuclear power plant that
     submitted information to the US authority on the cost of
     decommissioning. Data are expressed at 2017 U.S. dollar prices; and
-  - Water Power & Dam construction$39$ estimates, based on information
+  - Water Power & Dam construction[^3_43] estimates, based on information
     on dam destruction in the United-States, that decommissioning costs
     can be 20-40% of new construction costs.
 
@@ -4258,8 +4140,8 @@ relative to consumption units. For instance, in the power sector, coal
 emits 3.931 ton of $_{}$ per ktoe.
 
 The emission factors used are (as a default) fuel-, country- and
-sector-specific emissions from IIASA’s GAINS model$40$. The user also
-has the option to use global emissions factors from the IEA.$41$ The
+sector-specific emissions from IIASA’s GAINS model[^3_44]. The user also
+has the option to use global emissions factors from the IEA.[^3_45] The
 emission factors given by the IEA are scaled at a worldwide level, while
 those from IIASA are country specific. Also, IIASA emission factors
 include process and fugitive emissions in the distribution network from
@@ -4274,7 +4156,7 @@ option.
 ![Figure 63: Selection of the source of emission
 factors](./03/media/image37.png)
 
-Figure ‑: Selection of the source of emission factors
+Figure 3‑28: Selection of the source of emission factors
 
 The emissions are given originally in
 $\frac{\text{tC}O_{2}}{\text{GJ}}$, then converted in
@@ -4357,7 +4239,7 @@ emissions are subject to a calibration. In particular:
   - **Total energy-related** $\mathbf{C}\mathbf{H}_{\mathbf{4}}$
     **emissions** are calibrated to 2019 shares. The factor is the 2019
     ratio of methane emissions to the sum of the total global warming
-    potential$42$ from methane emissions $\text{gwp}$ and the
+    potential[^3_46] from methane emissions $\text{gwp}$ and the
     methane fugitive and venting emissions $\text{fug}$. Then,
     projections are made by multiplying this factor with the sum of the
     $\text{gwp}$ and the $\text{fug}$ for the current year $t$.
@@ -4472,7 +4354,7 @@ note that this rate can be adjusted in the dashboard.
 
 ![](./03/media/image38.png)
 
-Figure ‑: LULUCF emissions decline rate
+Figure 3‑29: LULUCF emissions decline rate
 
 At the global level, this aligns with approximately the midpoint of
 IAMs’ projection for LULUCF. Where the country assumes ‘additional
@@ -4662,7 +4544,7 @@ taxes will have some effects on these, net, revenues.
 ![Figure 64: Dashboard: Fiscal revenues raised by fuel and total as % of
 GDP](./03/media/image39.png)
 
-Figure ‑: Dashboard: Fiscal revenues raised by fuel and total as % of
+Figure 3‑30: Dashboard: Fiscal revenues raised by fuel and total as % of
 GDP
 
 The user can also see total revenues (i.e. not against the baseline
@@ -4681,22 +4563,22 @@ its breakdown in more details.
 
 | **Notation**      | **Variable**                                   | **Unit**                                                                        |
 | ----------------- | ---------------------------------------------- | ------------------------------------------------------------------------------- |
-| $\text{rev}$    | Fiscal revenues                                | Real 2021 USDbn                                                                 |
+| $\text{rev}$    | Fiscal revenues                                | Real 2021 US$bn                                                                 |
 | $F $              | Energy consumption                             | ktoe                                                                            |
 | $\varphi$       | Sector-fuel coverage                           | %                                                                               |
-| $\text{ncp}$    | New Carbon Price                               | USD/ton of CO2                                                                  |
-| $\text{revExi}$ | Revenues from existing excises and other taxes | Real 2021 USDbn                                                                 |
-| $\text{cs}$     | Consumer-side subsidy                          | USD/Gj                                                                          |
-| $\text{fao}$    | Fixed/ad val part/other                        | USD/Gj                                                                          |
-| $\text{xct}$    | Current carbon tax                             | USD/Gj                                                                          |
-| $\text{xetsp}$  | Current ETS permit price                       | USD/Gj                                                                          |
-| $\text{revVAT}$ | Revenues from VAT                              | Real 2021 USDbn                                                                 |
-| $\text{vat}$    | Value added tax                                | USD/Gj                                                                          |
-| $\text{cstPs}$  | Losses from producer-side subsidies            | Real 2021 USDbn                                                                 |
+| $\text{ncp}$    | New Carbon Price                               | US$/ton of CO2                                                                  |
+| $\text{revExi}$ | Revenues from existing excises and other taxes | Real 2021 US$bn                                                                 |
+| $\text{cs}$     | Consumer-side subsidy                          | US$/Gj                                                                          |
+| $\text{fao}$    | Fixed/ad val part/other                        | US$/Gj                                                                          |
+| $\text{xct}$    | Current carbon tax                             | US$/Gj                                                                          |
+| $\text{xetsp}$  | Current ETS permit price                       | US$/Gj                                                                          |
+| $\text{revVAT}$ | Revenues from VAT                              | Real 2021 US$bn                                                                 |
+| $\text{vat}$    | Value added tax                                | US$/Gj                                                                          |
+| $\text{cstPs}$  | Losses from producer-side subsidies            | Real 2021 US$bn                                                                 |
 | $\text{subDem}$ | Subsidized demand                              | Billion liters for oil, GJ for coal and natural gas and GWh for electricity     |
-| $\text{pusF}$   | Per-unit fossil fuels subsidies                | USD/liters for oil, USD/GJ for coal and natural gas and USD/GWh for electricity |
-| $\text{cstRen}$ | Cost of renewable subsidies                    | Real 2021 USDbn                                                                 |
-| $\text{pusRen}$ | Per-unit renewable subsidies                   | USD/kwh                                                                         |
+| $\text{pusF}$   | Per-unit fossil fuels subsidies                | US$/liters for oil, US$/GJ for coal and natural gas and US$/GWh for electricity |
+| $\text{cstRen}$ | Cost of renewable subsidies                    | Real 2021 US$bn                                                                 |
+| $\text{pusRen}$ | Per-unit renewable subsidies                   | US$/kwh                                                                         |
 
 ### Total revenues raised by policy
 
@@ -4772,7 +4654,7 @@ sectors.
     implicitly the underlined that we are using has already been
     adjusted for producer-side subsidies, in particular in the case of
     coal. Producer-side subsidies, $\text{cstP}s_{\text{ocft}}$, are
-    defined as the product between the per-unit subsidies$43$,
+    defined as the product between the per-unit subsidies[^3_47],
     $\text{pus}F_{\text{ocft}}$, and the subsidized demand,
     $\text{subDe}m_{\text{ocft}}$:
 
@@ -4794,7 +4676,7 @@ where:
 ![Figure 66: Dashboard: Global energy demand
 scenario](./03/media/image41.png)
 
-Figure ‑: Dashboard: Global energy demand scenario
+Figure 3‑32: Dashboard: Global energy demand scenario
 
   - Per unit subsidies are taken from the Prices section of CPAT. For
     coal, gasoline and natural gas, per unit subsidies correspond to the
@@ -4868,8 +4750,8 @@ prices from determining supply and demand.
 ![Figure 67: Efficiency costs and co-benefits in the presence of
 prior-tax and carbon charge](./03/media/image42.png)
 
-Figure ‑: Efficiency costs and co-benefits in the presence of prior-tax
-and carbon charge
+Figure 3‑33: Efficiency costs and co-benefits in the presence of
+prior-tax and carbon charge
 
 At any point, the height of the demand curve reflects the benefit to
 consumers from an extra unit of consumption, while the height of the
@@ -4977,7 +4859,7 @@ is called the ‘efficient price’.
 
 ![](./03/media/image43.png)
 
-Figure ‑: Dashboard: Global energy demand scenario
+Figure 3‑34: Dashboard: Global energy demand scenario
 
 These costs are displayed by fuel (i.e. coal, natural gas, electricity
 and liquid fuel, gasoline, diesel, LPG and kerosene) and sectors
@@ -4993,7 +4875,7 @@ components:
     is valued using a fraction of wages. See Section 6.7 of the Air
     Pollution module for methodological details.
 
-3.  **Road accident costs** and **Congestion costs**$44$. The main
+3.  **Road accident costs** and **Congestion costs**[^3_48]. The main
     road transport co-benefits of a carbon tax are a reduction in road
     accidents (from a reduction in driving, changes in the vehicle
     fleet, less aggressive driving, etc.) and a reduction in congestion
@@ -5027,7 +4909,7 @@ components:
         estimates** with a 2.5% discount rate.
     
       - Finally, the user can manually enter a social cost of carbon (in
-        USD2021 per ton of CO2), assuming that the latter starts in year
+        US$2021 per ton of CO2), assuming that the latter starts in year
         2021.
 
 These options can be modified in the dashboard:
@@ -5035,7 +4917,7 @@ These options can be modified in the dashboard:
 ![Figure 69: Dashboard: Social cost of carbon (SCC)
 assumptions](./03/media/image44.png)
 
-Figure ‑: Dashboard: Social cost of carbon (SCC) assumptions
+Figure 3‑35: Dashboard: Social cost of carbon (SCC) assumptions
 
   - **Potential VAT** can be calculated on the supply cost only or on
     the supply cost augmented by all externalities (the default).
@@ -5076,7 +4958,7 @@ GDP.
 
 ![Figure 70: Dashboard: Total monetized welfare](./03/media/image45.png)
 
-Figure ‑: Dashboard: Total monetized welfare
+Figure 3‑36: Dashboard: Total monetized welfare
 
 ## Validation
 
@@ -5346,7 +5228,7 @@ CPAT.
 
 ![](./03/media/image46.png)
 
-Figure ‑ Comparison between price elasticities used in CPAT and those
+Figure 3‑37 Comparison between price elasticities used in CPAT and those
 estimated in this study for transport ( A), residential (B), industrial
 (C) and service (D) sectors. The red triangles indicate an estimate
 obtained from one of the adopted estimators, while the blue triangles
@@ -5384,12 +5266,12 @@ homogeneous across fuels with values at most as high as 0.7.
 
 ![](./03/media/image47.png)
 
-Figure ‑: Comparison between income elasticities used in CPAT and those
-estimated in this study for Transport (A), Residential (B), Industrial
-(C) and Service (D) sectors. The red triangles indicate an estimate
-obtained from one of the adopted estimators, while the blue triangles
-indicate the value of the elasticity used in CPAT. The boxplot in
-subplot C indicates the range of the estimates obtained for the
+Figure 3‑38: Comparison between income elasticities used in CPAT and
+those estimated in this study for Transport (A), Residential (B),
+Industrial (C) and Service (D) sectors. The red triangles indicate an
+estimate obtained from one of the adopted estimators, while the blue
+triangles indicate the value of the elasticity used in CPAT. The boxplot
+in subplot C indicates the range of the estimates obtained for the
 industrial subsectors included in the study.
 
 ##### Linear trend
@@ -5411,10 +5293,10 @@ pointed out at non-statistically significant linear trend.
 
 ![](./03/media/image48.png)
 
-Figure ‑: Comparison between the assumed annual autonomous improvement
-in efficiency in CPAT and the global linear trend estimated in this
-study. The red triangles indicate the average of the estimates from the
-models allowing for a global linear trend.
+Figure 3‑39: Comparison between the assumed annual autonomous
+improvement in efficiency in CPAT and the global linear trend estimated
+in this study. The red triangles indicate the average of the estimates
+from the models allowing for a global linear trend.
 
 #### Conclusions and areas for improvement
 
@@ -5527,7 +5409,7 @@ is likely to benefit from including:
 Over the current section, we will compare CPAT results and projections
 with other models over a selection of indicators. We will therefore:
 
-1.  Compare CPAT’s baseline results against Enerdata and the IEA;$45$
+1.  Compare CPAT’s baseline results against Enerdata and the IEA;[^3_49]
 2.  Assess the sensitivity to carbon price against the Enerdata POLES
     model;
 3.  Put the two together: compare CPAT time trend for different carbon
@@ -5869,7 +5751,7 @@ conclusion:
 
 ![](./03/media/image72.png)
 
-Figure ‑: Effects of carbon pricing instruments on average annual
+Figure 3‑40: Effects of carbon pricing instruments on average annual
 emission reductions: A literature review.
 
 Notes: The numbers correspond to studies listed in the reference section
@@ -5921,9 +5803,10 @@ period. When looking into the range of CPAT’s estimates across all
 sectors, results are comparable with those of the literature (see Figure
 3‑40 above). At the sector level, the power sector records the highest
 decrease on the long run, which is consistent with Rafaty et
-al. (2020)$46$.
+al. (2020)[^3_50].
 
-Table ‑: Short- and long-term semi-elasticities of CO2 emission in CPAT
+Table 3‑9: Short- and long-term semi-elasticities of CO2 emission in
+CPAT
 
 <table>
 <thead>
@@ -6201,7 +6084,7 @@ those simulations with observed information. The checks are done on a
 country level basis, with a subset of those being presented here as a
 sample of results. Results are presented by means of figures, and tables
 of key statistics, namely the Root Mean Square error (RMSE) and its
-normalized version.$47$
+normalized version.[^3_51]
 
 #### Comparing projected emissions across selected countries
 
@@ -6224,10 +6107,10 @@ prices.
 
 ![](./03/media/image73.png)
 
-Figure ‑: Total GHG (mt.CO2e) excluding LULUCF
+Figure 3‑41: Total GHG (mt.CO2e) excluding LULUCF
 
-Table ‑ RMSE and Normalized RMSE . Total GHG Excluding LULUCF. Selected
-Countries
+Table 3‑10 RMSE and Normalized RMSE . Total GHG Excluding LULUCF.
+Selected Countries
 
 <table>
 <thead>
@@ -6322,9 +6205,9 @@ to interpolate data for these periods (see for instance, 2007-2014).
 
 ![](./03/media/image74.png)
 
-Figure ‑: Total energy-related CO2 emissions (mt.CO2e)
+Figure 3‑42: Total energy-related CO2 emissions (mt.CO2e)
 
-Table ‑ RMSE and Normalized RMSE. Total energy-related CO2 emissions.
+Table 3‑11 RMSE and Normalized RMSE. Total energy-related CO2 emissions.
 Selected Countries
 
 <table>
@@ -6447,10 +6330,10 @@ runs, and also left for further research.
 
 ![](./03/media/image75.png)
 
-Figure ‑: Domestic retail prices of coal used in the power sector
+Figure 3‑43: Domestic retail prices of coal used in the power sector
 
-Table ‑ RMSE and Normalized RMSE. Domestic retail prices of coal used in
-power. Selected Countries.
+Table 3‑12 RMSE and Normalized RMSE. Domestic retail prices of coal used
+in power. Selected Countries.
 
 <table>
 <thead>
@@ -6540,7 +6423,8 @@ power. Selected Countries.
 
 ![](./03/media/image76.png)
 
-Figure ‑: Historical retail prices of coal (domestic and international)
+Figure 3‑44: Historical retail prices of coal (domestic and
+international)
 
 ##### All countries
 
@@ -6556,7 +6440,7 @@ price elasticities of demand based on price projections may be needed.
 
 ![](./03/media/image77.png)
 
-Figure ‑: Coal prices, relative differences: $CPAT projection$ /
+Figure 3‑45: Coal prices, relative differences: $CPAT projection$ /
 $Observed domestic prices$
 
 #### Conclusions and additional analysis needed
@@ -6638,7 +6522,7 @@ rule-of-thumb is used to classify the sensitivity of the parameters:
 
 The table below summarizes the results of the sensitivity analysis.
 
-Table ‑: CPAT’s parameters sensitivity results
+Table 3‑: CPAT’s parameters sensitivity results
 
 <table>
 <thead>
@@ -7579,7 +7463,7 @@ This table shows the sources for all macro data in CPAT.
 <p>Euro exchange rate </p>
 </blockquote></td>
 <td><blockquote>
-<p>EUR per USD </p>
+<p>EUR per US$ </p>
 </blockquote></td>
 <td><blockquote>
 <p>WEO </p>
@@ -7755,7 +7639,7 @@ the CPAT energy balances.
 
 ![Figure 76: Mitigation module overview](./03/media/image78.png)
 
-Figure ‑: Mitigation module overview
+Figure 3‑46: Mitigation module overview
 
 We use the IEA Extended World Energy Balances, and Enerdata Energy
 Balances as the main sources to build the energy consumption tables used
@@ -8395,7 +8279,7 @@ We disaggregate transport and industry further to sectors.
 
 ![Figure 77: Sectors disaggregation in CPAT](./03/media/image79.png)
 
-Figure ‑: Sectors disaggregation in CPAT
+Figure 3‑47: Sectors disaggregation in CPAT
 
 #### CPAT fuels and sectors overlap
 
@@ -8407,7 +8291,7 @@ generate electricity (see the screenshot).
 
 ![Figure 78: Energy Balances](./03/media/image80.png)
 
-Figure ‑: Energy Balances
+Figure 3‑48: Energy Balances
 
 As the energy balances and prices are the main inputs for the Mitigation
 module, it is also essential to understand the overlap between energy
@@ -8424,7 +8308,7 @@ Figure 3‑49 explains the overlap of CPAT energy prices and sectors.
 ![Figure 79: CPAT energy prices and sectors
 overlap](./03/media/image81.png)
 
-Figure ‑: CPAT energy prices and sectors overlap
+Figure 3‑49: CPAT energy prices and sectors overlap
 
 #### Energy Consumption (EC) construction for CPAT
 
@@ -8453,7 +8337,7 @@ The table below depicts an example structure of such table:
 
 ![Figure 80: Energy Consumption](./03/media/image82.png)
 
-Figure ‑: Energy Consumption
+Figure 3‑50: Energy Consumption
 
 The CPAT energy consumption projections for the base year include a
 sub-process under which the fuel transformation sector is created. In
@@ -8469,7 +8353,7 @@ Summary: The following diagram summarizes the process.
 
 ![Figure 81: Energy Balances process](./03/media/image83.png)
 
-Figure ‑: Energy Balances process
+Figure 3‑51: Energy Balances process
 
 ### Appendix C - Prices And Taxes Methodology
 
@@ -8486,7 +8370,7 @@ taxes data.
 ![Figure 82: Mitigation module scheme: prices and
 taxes](./03/media/image84.png)
 
-Figure ‑: Mitigation module scheme: prices and taxes
+Figure 3‑52: Mitigation module scheme: prices and taxes
 
 The main data sources for prices and taxes inputs include:
 
@@ -8521,7 +8405,7 @@ to specific parts of this document.
 
 ![Figure 83: Dashboard](./03/media/image85.png)
 
-Figure ‑: Dashboard
+Figure 3‑53: Dashboard
 
 ##### Policy coverage and exemptions
 
@@ -8529,14 +8413,14 @@ The user can choose what sector and fuel to tax on the Dashboard:
 
 ![Figure 84: Dashboard: Policy coverage](./03/media/image86.png)
 
-Figure ‑: Dashboard: Policy coverage
+Figure 3‑54: Dashboard: Policy coverage
 
 Additionally, the user decides whether to phase out exemptions or not
 and the period to phase out exemptions.
 
 ![Figure 85: Dashboard: Exemptions](./03/media/image87.png)
 
-Figure ‑: Dashboard: Exemptions
+Figure 3‑55: Dashboard: Exemptions
 
 Note: if the fuel is exempt and the phase-out is active, the carbon
 pricing policy (new carbon tax or ETS) will increase by 1/n every year
@@ -8551,14 +8435,14 @@ prices:
 
 ![Figure 86: Dashboard: Sources for key inputs](./03/media/image88.png)
 
-Figure ‑: Dashboard: Sources for key inputs
+Figure 3‑56: Dashboard: Sources for key inputs
 
 The options for key inputs include “manual,” which the user can fill in
 a separate “Manual inputs” tab:
 
 ![Figure 87: Manual inputs](./03/media/image89.png)
 
-Figure ‑: Manual inputs
+Figure 3‑57: Manual inputs
 
 ##### Policy options: Existing carbon pricing policies
 
@@ -8567,14 +8451,14 @@ on the Dashboard:
 
 ![Figure 88: Dashboard: Policy Options](./03/media/image90.png)
 
-Figure ‑: Dashboard: Policy Options
+Figure 3‑58: Dashboard: Policy Options
 
 The user also has an option to specify carbon tax or ETS permit price
 growth for future years in the “Advanced options” of the Dashboard:
 
 ![Figure 89: Dashboard: Advanced Policy Options](./03/media/image91.png)
 
-Figure ‑: Dashboard: Advanced Policy Options
+Figure 3‑59: Dashboard: Advanced Policy Options
 
 Note 1: even if the user decides not to apply existing carbon pricing
 mechanisms, it will not affect historical prices, only forecasted.
@@ -8597,14 +8481,14 @@ of the “Manual inputs” tab.
 ![Figure 90: Manual inputs: Manual Policy
 Options](./03/media/image92.png)
 
-Figure ‑: Manual inputs: Manual Policy Options
+Figure 3‑60: Manual inputs: Manual Policy Options
 
 The user also has an option not to apply existing excise taxes starting
 from the policy year (existing excises used by default):
 
 ![Figure 91: Dashboard: Existing tax removal](./03/media/image93.png)
 
-Figure ‑: Dashboard: Existing tax removal
+Figure 3‑61: Dashboard: Existing tax removal
 
 Note 1: if the user decides not to apply existing non-carbon taxes, this
 decision will affect only policy forecast, not baseline and historical
@@ -8630,7 +8514,7 @@ optimal taxation (included by default):
 
 ![Figure 92: Dashboard: VAT Reform](./03/media/image94.png)
 
-Figure ‑: Dashboard: VAT Reform
+Figure 3‑62: Dashboard: VAT Reform
 
 Also, the user can choose to apply the same VAT tax rate in the
 residential and transport sectors if it is different from the general
@@ -8639,7 +8523,7 @@ VAT in the economy (“advanced options” in the Dashboard):
 ![Figure 93: Dashboard: Adjusting VAT per
 sector](./03/media/image95.png)
 
-Figure ‑: Dashboard: Adjusting VAT per sector
+Figure 3‑63: Dashboard: Adjusting VAT per sector
 
 ##### Fossil fuel subsidies reform
 
@@ -8652,7 +8536,7 @@ specified limit.
 ![Figure 94: Dashboard: Fossil Fuel Subsidies
 Reform](./03/media/image96.png)
 
-Figure ‑: Dashboard: Fossil Fuel Subsidies Reform
+Figure 3‑64: Dashboard: Fossil Fuel Subsidies Reform
 
 Additionally, the user can choose to phase out only a part of the fossil
 fuel subsidies in the “advanced options” of the Mitigation module.
@@ -8660,7 +8544,7 @@ fuel subsidies in the “advanced options” of the Mitigation module.
 ![Figure 95: Dashboard: Fossil Fuel Subsidies Reform (Advanced
 Options)](./03/media/image97.png)
 
-Figure ‑: Dashboard: Fossil Fuel Subsidies Reform (Advanced Options)
+Figure 3‑65: Dashboard: Fossil Fuel Subsidies Reform (Advanced Options)
 
 ##### Price liberalization
 
@@ -8673,7 +8557,7 @@ fiscal revenues or losses.
 ![Figure 96: Dashboard: Price liberalization (Advanced
 Options)](./03/media/image98.png)
 
-Figure ‑: Dashboard: Price liberalization (Advanced Options)
+Figure 3‑66: Dashboard: Price liberalization (Advanced Options)
 
 Note. Do not use price liberalization and fossil fuels subsidies phase
 out simultaneously to avoid double-counting.
@@ -8687,7 +8571,7 @@ baseline.
 
 ![Figure 97: Main components of baseline prices](./03/media/image99.png)
 
-Figure ‑: Main components of baseline prices
+Figure 3‑67: Main components of baseline prices
 
 **Supply cost** is an average price that includes all price components
 like production and transformation costs, transportation and
@@ -9003,7 +8887,7 @@ price based on an goal on the emissions level.
 
 ![](./03/media/image100.png)
 
-Figure ‑: ETS target price - Goal Seek
+Figure 3‑68: ETS target price - Goal Seek
 
 Located to the right of the Advanced Options in the dashboard, the goal
 seek allows the user to input:
@@ -9070,7 +8954,7 @@ Based on NDC targets:
 ![Figure 99: Rebound effect from exogenous efficiency improvements (% of
 emissions reduction reduced)](./03/media/image101.png)
 
-Figure ‑: Rebound effect from exogenous efficiency improvements (% of
+Figure 3‑69: Rebound effect from exogenous efficiency improvements (% of
 emissions reduction reduced)
 
 #### Example 2: Colombia (fixed NDC)
@@ -9110,7 +8994,7 @@ Based on NDC targets:
 ![Figure 100: Rebound effect from exogenous efficiency improvements (%
 of emissions reduction reduced)](./03/media/image102.png)
 
-Figure ‑: Rebound effect from exogenous efficiency improvements (% of
+Figure 3‑70: Rebound effect from exogenous efficiency improvements (% of
 emissions reduction reduced)
 
 NB: **CPAT models the impact of carbon pricing on energy-related
@@ -9158,7 +9042,7 @@ Based on NDC targets:
 ![Figure 101: Rebound effect from exogenous efficiency improvements (%
 of emissions reduction reduced)](./03/media/image103.png)
 
-Figure ‑: Rebound effect from exogenous efficiency improvements (% of
+Figure 3‑71: Rebound effect from exogenous efficiency improvements (% of
 emissions reduction reduced)
 
 #### Example 4: Uruguay (intensity NDC)
@@ -9192,7 +9076,7 @@ $37.4*\left( 1 - 8.8\% \right) = 34.1$ MtCO2e
 ![Figure 102: Rebound effect from exogenous efficiency improvements (%
 of emissions reduction reduced)](./03/media/image104.png)
 
-Figure ‑: Rebound effect from exogenous efficiency improvements (% of
+Figure 3‑72: Rebound effect from exogenous efficiency improvements (% of
 emissions reduction reduced)
 
 ### Appendix E – Defaults and parameter options in the mitigation module
@@ -9204,7 +9088,7 @@ This tables presents the **general settings**.
 
 ![](./03/media/image105.png)
 
-Figure ‑: Dashboard: General settings
+Figure 3‑73: Dashboard: General settings
 
 <table>
 <thead>
@@ -9551,7 +9435,7 @@ Low = decrease all fiscal multipliers by 1 standard deviation</p>
 <p>Target*/Ricke2018/GlobalUS-EPA</p>
 </blockquote></td>
 <td><blockquote>
-<p>Shows national social cost of carbon source, which are the estimated cost of climate damages for the country, excluding costs to other countries (real USD2018 per ton of CO2)<br />
+<p>Shows national social cost of carbon source, which are the estimated cost of climate damages for the country, excluding costs to other countries (real US$2018 per ton of CO2)<br />
 Target = global average Paris-consistent carbon price (set to $75 by 2030)<br />
 Ricke2018 = uses Ricke et al. 2018 global estimates (further parametrization in 'Advanced options' in mitigation module)<br />
 Global - US EPA - use global SCC estimate from the US EPA ($62 in 2018)<br />
@@ -9609,7 +9493,7 @@ This table presents the **advanced mitigation options**.
 
 ![](./03/media/image106.png)
 
-Figure ‑: Dashboard: Advanced mitigation options
+Figure 3‑74: Dashboard: Advanced mitigation options
 
 <table>
 <thead>
@@ -10018,7 +9902,7 @@ This table presents the **advanced power sector options**.
 
 ![](./03/media/image107.png)
 
-Figure ‑: Dashboard: Advanced power sector options
+Figure 3‑75: Dashboard: Advanced power sector options
 
 <table>
 <thead>
@@ -11676,7 +11560,7 @@ set of countries.
 
 ![](./03/media/image116.png)
 
-1.  The mitigation chapter of the CPAT documentation was prepared by
+[^3_1]:  The mitigation chapter of the CPAT documentation was prepared by
     Alexandra Campmas, Daniel Bastidas, Olivier Lelouch, Faustyna
     Gawryluk, Paolo Agnolucci, and Stephen Stretton. Some sections are
     based on earlier papers by Ian Parry, Simon Black, Karlygash
@@ -11696,43 +11580,43 @@ set of countries.
     direction, and for originating what became CPAT. Thanks also to
     Somik Lall for leadership and guidance.
 
-2.  <sup>∗</sup> Corresponding authors: Alexandra Campmas
+[^3_2]:  <sup>∗</sup> Corresponding authors: Alexandra Campmas
     (<acampmas@worldbank.org>) and Stephen Stretton
     (<sstretton@worldbank.org>).
 
-3.  
-4.  Victor Mylonas (WB) is listed on the IMF side reflecting his
+[^3_3]:  
+[^3_4]:  Victor Mylonas (WB) is listed on the IMF side reflecting his
     historical contribution to the mitigation module when working at the
     IMF.
 
-5.  Income and price elasticities are based on a literature review.
+[^3_5]:  Income and price elasticities are based on a literature review.
     Income elasticities might depend (implicitly) on the level of GDP
     per capita (user option).
 
-6.  IMF (2019), Fiscal Policies for Paris Climate Strategies, From
+[^3_6]:  IMF (2019), Fiscal Policies for Paris Climate Strategies, From
     Principle to Practice
     $<https://www.imf.org/en/Publications/Policy-Papers/Issues/2019/05/01/Fiscal-Policies-for-Paris-Climate-Strategies-from-Principle-to-Practice-46826>$
 
-7.  Burke, Paul J., and Zsuzsanna Csereklyei. 2016. “Understanding the
+[^3_7]:  Burke, Paul J., and Zsuzsanna Csereklyei. 2016. “Understanding the
     Energy-GDP Elasticity: A Sectoral Approach.” Energy Economics 58:
     199–210. https://doi.org/10.1016/j.eneco.2016.07.004.
 
-8.  Gertler, Paul J., Orie Shelef, Catherine D. Wolfram, and Alan Fuchs.
+[^3_8]:  Gertler, Paul J., Orie Shelef, Catherine D. Wolfram, and Alan Fuchs.
     2016. “The Demand for Energy-Using Assets among the World’s Rising
     Middle Classes.” American Economic Review 106 (6): 1366–1401.
     https://doi.org/10.1257/aer.20131455
 
-9.  Please note that more comparisons are available upon request.
+[^3_9]:  Please note that more comparisons are available upon request.
 
-10. With $o$=(B) for baseline; $o$=(P) for policy e.g., carbon tax.
+[^3_10]: With $o$=(B) for baseline; $o$=(P) for policy e.g., carbon tax.
 
-11. Used in the emissions accounting section. This category
+[^3_11]: Used in the emissions accounting section. This category
     distinguishes between energy-related (E), (which includes power,
     transport, buildings, industry and other energy use), Industrial
     Processes and Product Use (I), Agriculture (A), Land Use, Land-Use
     Change and Forestry (L), Waste (W), and Other (O) emissions.
 
-12. For the aggregation of energy and emissions, sector groupings refer
+[^3_12]: For the aggregation of energy and emissions, sector groupings refer
     to buildings (i.e., residential, services, and food & forestry)
     industry, transport, and power. Some other calculations have
     different aggregations. For prices, sector groupings refer to
@@ -11740,82 +11624,93 @@ set of countries.
     elasticities, sector groupings refer to residential, industrial,
     services (including food & forestry), transport, and power.
 
-13. The following abbreviations for fuels considered are used in the
+[^3_13]: The following abbreviations for fuels considered are used in the
     documentation: Coal (COA), Natural gas (NGA) Oil (OIL), Nuclear
     (NUC), Wind (WND), Solar (SOL), Hydro (HYD), Other renewables (REN)
     and Biomass (BIO).
 
-14. $t_{0}$ represents the first year of model calculations, also
+[^3_14]: $t_{0}$ represents the first year of model calculations, also
     known as the base year (as of the time of writing, 2019).
 
-15. IMF (2019):
+[^3_15]: IMF (2019):
     $<https://www.imf.org/en/Publications/Policy-Papers/Issues/2019/05/01/Fiscal-Policies-for-Paris-Climate-Strategies-from-Principle-to-Practice-46826>$
     (Fiscal Policies for Paris Climate Strategies, From Principle to
     Practice.)
 
-16. A shadow price translates a non-pricing policy type into an explicit
+[^3_16]: A shadow price translates a non-pricing policy type into an explicit
     carbon price.
 
-17. Efficiency in the residential sector is retrieved from Malla &
+[^3_17]: Efficiency in the residential sector is retrieved from Malla &
     Timilsina (2014), Household Cooking Fuel Choice and Adoption of
     Improved Cookstoves in Developing Countries, The World Bank
     Development Research Group Environment and Energy Team, Policy
     Research Working Paper 6903.
     <https://documents1.worldbank.org/curated/en/542071468331032496/pdf/WPS6903.pdf>
 
-18. Burke, Paul J., and Zsuzsanna Csereklyei. 2016. “Understanding the
+[^3_18]: Burke, Paul J., and Zsuzsanna Csereklyei. 2016. “Understanding the
     Energy-GDP Elasticity: A Sectoral Approach.” Energy Economics 58:
     199–210. https://doi.org/10.1016/j.eneco.2016.07.004.
 
-19. Gertler, Paul J., Orie Shelef, Catherine D. Wolfram, and Alan Fuchs.
+[^3_19]: Gertler, Paul J., Orie Shelef, Catherine D. Wolfram, and Alan Fuchs.
     2016. “The Demand for Energy-Using Assets among the World’s Rising
     Middle Classes.” American Economic Review 106 (6): 1366–1401.
     https://doi.org/10.1257/aer.20131455
 
-20. Empirical studies generally include rebound effects when estimating
+[^3_20]: Empirical studies generally include rebound effects when estimating
     the total price elasticity of demand.
 
-21. Transport sector studies accord to the highest share of elasticity
+[^3_21]: Transport sector studies accord to the highest share of elasticity
     studies, mostly gasoline and diesel. For estimates see Tables A1-A4
     in Labandeira and others (2017).
 
-22. > Capacity factors are assumed to be as in the base year (unless
+[^3_22]: > Capacity factors are assumed to be as in the base year (unless
     > those capacity factors are outside of normal ranges, when default
     > values are used)
 
-23. They are also components of the forward-looking levelized cost (see
+[^3_23]: They are also components of the forward-looking levelized cost (see
     investment costs/LCOEs, later)
 
-24. Decommissioning costs are not discounted.
+[^3_24]: Decommissioning costs are not discounted.
 
-25. See
+[^3_25]: See
     <https://www.iea.org/topics/energy-subsidies#methodology-and-assumptions>
 
-26. Power plants are removed if status is cancelled, shelved,
+[^3_26]: Power plants are removed if status is cancelled, shelved,
     mothballed.
 
-27. Bogdanov, D., Farfan, J., Sadovskaia, K., Aghahosseini, A., Child,
+[^3_27]: Bogdanov, D., Farfan, J., Sadovskaia, K., Aghahosseini, A., Child,
     M., Gulagi, A., Oyewo, A. S., de Souza Noel Simas Barbosa, L., &
     Breyer, C. (2019). Radical transformation pathway towards
     sustainable electricity via evolutionary steps. Nature
     Communications, 10(1), 1–16.
     <https://doi.org/10.1038/s41467-019-08855-1>
 
-28. IMF (2019):
+[^3_28]: IMF (2019):
     $<https://www.imf.org/en/Publications/Policy-Papers/Issues/2019/05/01/Fiscal-Policies-for-Paris-Climate-Strategies-from-Principle-to-Practice-46826>$
     (Fiscal Policies for Paris Climate Strategies, From Principle to
     Practice.)
 
-29. Note that the electricity sector is denoted by E.
+[^3_29]: Note that the electricity sector is denoted by E.
 
-30. CPAT regions are East Asia & Pacific (EAS), Europe and Central Asia
+[^3_30]: CPAT regions are East Asia & Pacific (EAS), Europe and Central Asia
     (ECS), Latin America (LNC), Middle East North Africa (MENA), North
     America (NAC), South Asia (SAS), Sub-Saharan Africa (SSF). Due to
     their specific nature, China, Korea and Japan are treated separately
     from the rest of the Rest of Asian regions and not included in
     regional averages.
 
-31. The choice of this period depends on the likely effects of the
+[^3_31]: [IEA Stated Policies Scenario
+    (STEPS)](https://www.iea.org/reports/global-energy-and-climate-model/stated-policies-scenario-steps)
+
+[^3_32]: [IEA Net Zero Emissions by 2050 Scenario
+    (NZE)](https://www.iea.org/reports/global-energy-and-climate-model/net-zero-emissions-by-2050-scenario-nze)
+
+[^3_33]: Rupert Way, Matthew C. Ives, Penny Mealy, J. Doyne Farmer,
+    [Empirically grounded technology forecasts and the energy
+    transition](https://www.sciencedirect.com/science/article/pii/S254243512200410X),
+    2022
+
+[^3_34]: The choice of this period depends on the likely effects of the
     pandemic on CAPEX trends. Based on the available data for wind
     power, we observe that CapEx increases in 2020 and 2021 by 3% and
     1.5%, respectively and finally decreases in 2022 by the same amount,
@@ -11823,67 +11718,71 @@ set of countries.
     account for the effects of the pandemic on CapEx. Missing data
     points between 2020 and 2022 are filled in based on these rates.
 
-32. In CPAT, China, Japan and Korea are treated separately because their
+[^3_35]: In CPAT, China, Japan and Korea are treated separately because their
     trends are very different from those observed at the regional level.
 
-33. Pescatori, Andreas and Boer, Lukas and Stuermer, Martin, Energy
+[^3_36]: All experience parameters are extracted/calculated from [Rupert Way,
+    Matthew C. Ives, Penny Mealy, J. Doyne
+    Farmer, 2022](https://www.cell.com/cms/10.1016/j.joule.2022.08.009/attachment/98ea1ec7-59fd-41c4-9caf-c77a37125e2b/mmc1)
+
+[^3_37]: Pescatori, Andreas and Boer, Lukas and Stuermer, Martin, Energy
     Transition Metals (October 1, 2021). IMF Working Paper No. 2021/243.
     For the IMF’s Energy Transition Metals Index see
     
     <https://www.imf.org/en/Research/commodity-prices>
 
-34. See
+[^3_38]: See
     <https://www.imf.org/-/media/Files/Publications/WP/2021/English/wpiea2021243-print-pdf.ashx>
     or
     <https://www.imf.org/-/media/Files/Research/CommodityPrices/WEOSpecialFeature/october-2021-commodity-special-feature.ashx>
 
-35. Lion Hirth and Jan Christoph Steckel 2016 The role of capital costs
+[^3_39]: Lion Hirth and Jan Christoph Steckel 2016 The role of capital costs
     in decarbonizing the electricity sector Environ. Res. Lett. 11
     114010
 
-36. Data are available at: <https://data.openei.org/submissions/4129>
+[^3_40]: Data are available at: <https://data.openei.org/submissions/4129>
 
-37. To measure data in kWh, costs are divided by the ratio kW/kWh
+[^3_41]: To measure data in kWh, costs are divided by the ratio kW/kWh
     (i.e. 2h).
 
-38. The estimate is taken from the following article, based on Duke
+[^3_42]: The estimate is taken from the following article, based on Duke
     Energy:
     <https://www.powermag.com/data-shows-nuclear-plant-decommissioning-costs-falling/>
 
-39. See
+[^3_43]: See
     <https://www.waterpowermagazine.com/features/featuredecommissioning-dams-costs-and-trends/>
 
-40. Note that IIASA Emission Factors include process emissions, but we
+[^3_44]: Note that IIASA Emission Factors include process emissions, but we
     scale them to UNFCCC inventory emissions to only cover
     energy-related emissions
 
-41. See <https://pure.iiasa.ac.at/id/eprint/17552/>
+[^3_45]: See <https://pure.iiasa.ac.at/id/eprint/17552/>
 
-42. We calculate the Global Warming Potential (GWP) of GHG according to
+[^3_46]: We calculate the Global Warming Potential (GWP) of GHG according to
     international norms (using GWP100, over 100 years timescale). This
     allows us to calculate a total Carbon Dioxide Equivalent
     (CO<sub>2</sub><sup>e</sup>) value. GWP is also calculated for
     short-term pollutants which have a cooling effect.
 
-43. For oil, it is worth noting that the component ‘other oil products’
+[^3_47]: For oil, it is worth noting that the component ‘other oil products’
     is removed from the calculation as these types of fuels (e.g. light
     fuel oil) are not subsidized.
 
-44. Note that road damage costs are also calculated in the Transport
+[^3_48]: Note that road damage costs are also calculated in the Transport
     module. Resulting reduced road damage are currently not accounted
     for in welfare benefits, although they are also estimated in the
     Transport module (see Chapter Transport Module, Section Road
     damage).
 
-45. Note that additional comparisons are available on demand. Notably,
+[^3_49]: Note that additional comparisons are available on demand. Notably,
     additional comparisons were done disaggregating the results per
     country, per sector and per fuel when available.
 
-46. Rafaty et al. (2020) is comparable to CPAT in the sense that
+[^3_50]: Rafaty et al. (2020) is comparable to CPAT in the sense that
     semi-elasticities are assessed globally and across different
     sectors.
 
-47. The RMSE and its normalized version measure how far the projections
+[^3_51]: The RMSE and its normalized version measure how far the projections
     are from observed historical data. The RMSE is scale-dependant,
     while the normalized RMSE is not, allowing for comparison across
     series or countries. Here, the normalization was done using the

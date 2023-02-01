@@ -1,4 +1,5 @@
 
+# **Cover** {.unnumbered}
 
 <p>Technical notes, August 26<sup>th</sup>, 2022</p>
 
@@ -16,7 +17,7 @@ Carbon pricing is a cost-effective tool to lower emissions, but well-designed re
 
 The Climate Policy Assessment Tool (CPAT) was developed to help countries provide a rapid evaluation of the potential impacts of carbon pricing reforms. As a global tool covering more than 150 countries, CPAT can be used as a one-stop-shop by anyone who is interested in a quick diagnostic of the potential benefits of a carbon price reform across multiple key dimensions, including not only emissions reduction potential and macroeconomic aggregates but also air pollution and health, road fatalities and congestion, and distributional impacts.
 
-### **Why 400 pages of documentation?** {.unnumbered}
+## **Why 400 pages of documentation?** {.unnumbered}
 
 CPAT is comprised of several economic models. Economic models describe a simplified reality and so they are, by definition, subject to considerable uncertainty. When interpreting the results of a model, knowing the underlying assumptions is critical. For this reason, several steps have been taken to improve the transparency of CPAT. First, the tool is spreadsheet-based with data and formulas readily accessible within the tool. Second, the tool is accompanied by a detailed 400-page documentation of the methodology which includes important caveats and cautions related to interpretation and data issues.
 

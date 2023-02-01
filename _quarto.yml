@@ -2,19 +2,21 @@ project:
   type: book
   output-dir: ./docs
 
+execute: 
+  freeze: auto
+
 book:
   title: "CPAT Documentation" 
   author: "CPAT Team"
   date: last-modified
   favicon: ./00/media/image1.png
+  cover-image: ./00/media/image1.png
   search: true
   repo-url: https://github.com/
   repo-actions: [issue]
   downloads: [pdf]
   reader-mode: true
   page-footer: "WBG, 2023"
-  margin-header: |
-    ![](./00/media/image1.png)
   chapters:
     - index.qmd
     - 01_User_Guide.qmd
@@ -30,7 +32,8 @@ bibliography: references.bib
 format:
   html:
     toc-depth: 4
-    title-block-style: plain
+    toc-location: left
+    toc-title: "***Chapter Contents***"
     theme: cosmo
   pdf:
     documentclass: scrreprt

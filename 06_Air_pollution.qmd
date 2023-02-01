@@ -1365,7 +1365,7 @@ Table ‑: Comparison between information sources, Parry 2014 vs CPAT
 <li><p>2,400 coal plants</p></li>
 <li><p>2,000 natural gas plants</p></li>
 </ul></td>
-<td><p>Global Power Plant Database[9] (Global Energy Observatory et al. 2018).</p>
+<td><p>Global Power Plant Database[^6_9] (Global Energy Observatory et al. 2018).</p>
 <ul>
 <li><p>Updated in 2019</p></li>
 <li><p>164 countries</p></li>
@@ -1377,7 +1377,7 @@ Table ‑: Comparison between information sources, Parry 2014 vs CPAT
 <tr class="odd">
 <td>Gridded population</td>
 <td>LandScan- 2010 Population</td>
-<td>Earth Data[10], 2020 pop (Center for International Earth Science Information Network (CIESIN) Columbia University 2018b)</td>
+<td>Earth Data[^6_10], 2020 pop (Center for International Earth Science Information Network (CIESIN) Columbia University 2018b)</td>
 </tr>
 <tr class="even">
 <td>Exposed population</td>
@@ -1668,7 +1668,7 @@ Source: Own elaboration
 </tr>
 <tr class="even">
 <td>Population projections by age group and country</td>
-<td>WB Population Estimates and Projections[16] (World Bank Group 2019). The database includes population projections by country, sex and age range by country up to 2050. It also includes the share or urban and rural populations.</td>
+<td>WB Population Estimates and Projections[^6_16] (World Bank Group 2019). The database includes population projections by country, sex and age range by country up to 2050. It also includes the share or urban and rural populations.</td>
 </tr>
 <tr class="odd">
 <td>Urban population fraction by country</td>
@@ -1689,7 +1689,7 @@ Source: Own elaboration
 </tr>
 <tr class="odd">
 <td>Exposure to ambient PM<sub>2.5</sub></td>
-<td>WHO Country average exposure (World Health Organization 2018b)[17] and GBD 2019 ambient concentrations.</td>
+<td>WHO Country average exposure (World Health Organization 2018b)[^6_17] and GBD 2019 ambient concentrations.</td>
 </tr>
 <tr class="even">
 <td>Exposure to indoors PM<sub>2.5</sub></td>
@@ -2473,7 +2473,7 @@ Table ‑: Data sources used for the different productivity parameters
 <td><br /><span class="math display"><em>L</em><sub>it</sub></span><br /></td>
 <td>Number or persons that are employed</td>
 <td><p><br /><span class="math display"><em>L</em> = <em>L</em><em>a</em><em>b</em><em>o</em><em>r</em><em>F</em><em>o</em><em>r</em><em>c</em><em>e</em><sub>total</sub> * (1 − <em>u</em><em>n</em><em>e</em><em>m</em><em>p</em><em>l</em><em>o</em><em>y</em><em>m</em><em>e</em><em>n</em><em>t</em>)</span><br /></p>
-<p>Labor force[30] derived using data from International Labour Organization, ILOSTAT database and World Bank population estimates. Labor data retrieved in April 2019.</p>
+<p>Labor force[^6_30] derived using data from International Labour Organization, ILOSTAT database and World Bank population estimates. Labor data retrieved in April 2019.</p>
 <p>Unemployment from International Labour Organization, ILOSTAT database. Data retrieved in April 2019.</p></td>
 </tr>
 <tr class="odd">
@@ -2485,13 +2485,13 @@ Table ‑: Data sources used for the different productivity parameters
 <td><em>π<sub>ij,t</sub></em></td>
 <td>Probability of survival</td>
 <td><p>The probability of survival is the probability that an individual would have survived to each future year of his working life.</p>
-<p>The probability of death[31] is obtained from (Global Burden of Disease Collaborative Network 2018) for every country and age group. The probability of survival up to 64 years is calculated as follows:</p>
+<p>The probability of death[^6_31] is obtained from (Global Burden of Disease Collaborative Network 2018) for every country and age group. The probability of survival up to 64 years is calculated as follows:</p>
 <p><br /><span class="math display">$$\pi_{j} = \prod_{j}^{64}{(1 - \text{Prob\ of\ death}_{j})}$$</span><br /></p></td>
 </tr>
 <tr class="odd">
 <td><em>g</em></td>
 <td>growth rate of GDP per worker</td>
-<td><p>ILO indicators[32], up to 2023:</p>
+<td><p>ILO indicators[^6_32], up to 2023:</p>
 <p>- SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2010 US $) (%)</p>
 <p>After 2023, we assume a growth rate equal to the rate in 2023.</p></td>
 </tr>
@@ -2499,7 +2499,7 @@ Table ‑: Data sources used for the different productivity parameters
 <td><em>r</em></td>
 <td>Discount rate</td>
 <td><p>CPAT allows the user to select among 3 options: i) Use the real interest rate for the country, ii) Using a 3% discount rate, as recommended in (Robinson, Hammitt, and O’Keeffe 2019), iii) Input manually a discount rate.</p>
-<p>In case the user selects the first option,<span class="math inline"> r</span> will be the real interest rate[33] (%) from the International Monetary Fund, International Financial Statistics and data files using World Bank data on the GDP deflator[34]. That data covers 127 countries.</p>
+<p>In case the user selects the first option,<span class="math inline"> r</span> will be the real interest rate[^6_33] (%) from the International Monetary Fund, International Financial Statistics and data files using World Bank data on the GDP deflator[^6_34]. That data covers 127 countries.</p>
 <p>Data is available up to 2018. After 2018, it’s assumed an interest rate equal to the average of the rates between 2014 and 2018.</p></td>
 </tr>
 </tbody>

@@ -106,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link"><strong>Foreword</strong></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><strong>Cover</strong></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -146,13 +146,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
     </ul>
     </div>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="./00/media/image1.png" class="img-fluid"></p>
-</div></div>
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title"><strong><em>Chapter Contents</em></strong></h2>
    
   <ul>
   <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link active" data-scroll-target="#executive-summary"><span class="toc-section-number">6.1</span>  Executive summary</a></li>
@@ -244,6 +239,9 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -2239,7 +2237,7 @@ CARMA
 </td>
 <td>
 <p>
-Global Power Plant Database[9] (Global Energy Observatory et al.&nbsp;2018).
+Global Power Plant Database<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> (Global Energy Observatory et al.&nbsp;2018).
 </p>
 <ul>
 <li>
@@ -2278,7 +2276,7 @@ Gridded population
 LandScan- 2010 Population
 </td>
 <td>
-Earth Data[10], 2020 pop (Center for International Earth Science Information Network (CIESIN) Columbia University 2018b)
+Earth Data<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>, 2020 pop (Center for International Earth Science Information Network (CIESIN) Columbia University 2018b)
 </td>
 </tr>
 <tr class="even">
@@ -2330,11 +2328,11 @@ Power generation (average years available or estimated generation). If no value 
 </table>
 <p>As indicated in the previous table, CPAT will use the Global Power Plant Database (Global Energy Observatory et al.&nbsp;2018), which includes approximately 28,700 geolocated power plants in 164 countries, accounting for 80% of global installed capacity (Byers et al.&nbsp;2019). The database contains 2,390 coal plants, 3,922 gas power plants and 2,290 oil power plants.</p>
 <p>The team decided to use this database, since CARMA database has not been updated since 2012 (Byers et al.&nbsp;2019). Figure 6‑13 shows, as an example, the location of the coal power plants included in the database.</p>
-<p>Figure ‑: Location of Coal Power Plants<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p>
+<p>Figure ‑: Location of Coal Power Plants<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
 <p><img src="./06/media/image12.png" class="img-fluid"></p>
 <p>Source: Based on (Global Energy Observatory et al.&nbsp;2018)</p>
-<p>Zhou et al.&nbsp;(2006) requires estimating population around different distances of each power plant. To estimate population inside different distance buffers, gridded population data was obtained from the Center for International Earth Science Information Network (CIESIN), from Columbia university. The population-count raster file used consists of estimates of human population (number of persons per pixel), consistent with national censuses and population registers, for the years 2000, 2005, 2010, 2015, and 2020 (CPAT analysis is based on 2020). The data set consists of global raster files at 30 arc-second horizontal resolution (approximately 1 km at the equator). The 30 arc-second<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> data were aggregated to 2.5 arc-minute, 15 arc-minute, 30 arc-minute and 1 degree resolutions (Center for International Earth Science Information Network (CIESIN) Columbia University 2018a). The team decided to use this dataset, instead of Landscan 2017, since the former is available free of charge, and both sources provide equivalent quality and resolution.</p>
-<p>The methodology in Zhou et al.&nbsp;(2006) allows the inclusion of the variable precipitations. Precipitations data<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> was obtained from The Millennium Ecosystem Assessment (MA) Climate and Land Cover, v1 (1901 – 2000)<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> (NASA Socioeconomic Data and Applications Center (SEDAC) 2005). This dataset contains raster grids for monthly average precipitations.</p>
+<p>Zhou et al.&nbsp;(2006) requires estimating population around different distances of each power plant. To estimate population inside different distance buffers, gridded population data was obtained from the Center for International Earth Science Information Network (CIESIN), from Columbia university. The population-count raster file used consists of estimates of human population (number of persons per pixel), consistent with national censuses and population registers, for the years 2000, 2005, 2010, 2015, and 2020 (CPAT analysis is based on 2020). The data set consists of global raster files at 30 arc-second horizontal resolution (approximately 1 km at the equator). The 30 arc-second<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> data were aggregated to 2.5 arc-minute, 15 arc-minute, 30 arc-minute and 1 degree resolutions (Center for International Earth Science Information Network (CIESIN) Columbia University 2018a). The team decided to use this dataset, instead of Landscan 2017, since the former is available free of charge, and both sources provide equivalent quality and resolution.</p>
+<p>The methodology in Zhou et al.&nbsp;(2006) allows the inclusion of the variable precipitations. Precipitations data<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> was obtained from The Millennium Ecosystem Assessment (MA) Climate and Land Cover, v1 (1901 – 2000)<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> (NASA Socioeconomic Data and Applications Center (SEDAC) 2005). This dataset contains raster grids for monthly average precipitations.</p>
 <p>For each power plant we built a distance buffer of 40 kilometers and we compute the average precipitation inside that buffer. That variable is then used to predict intake fractions for each power plant, according to in Zhou et al.&nbsp;(2006).</p>
 <p>The regression coefficients from Zhou et al.&nbsp;(2006), presented in Table 6‑13, will be used to estimate an intake fraction for each power plant in each country.</p>
 <p>Table ‑: Coefficients for intake fractions from Zhou et al.&nbsp;(2006), Table 6</p>
@@ -2492,7 +2490,7 @@ Power generation (average years available or estimated generation). If no value 
 <p><span class="math inline">\(i = \left\{ \begin{matrix} 1,\ \ Population\ within\ 100\ km\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \\ 2,\ \ Population\ between\ 100\ and\ 500\ km\ \ \  \\ 3,\ \ Population\ between\ 500\ and\ 1000\ km \\ 4,\ \ Population\ within\ 1000\ and\ 2000\ km\  \\ \end{matrix} \right.\ \)</span></p>
 <p><span class="math inline">\(j\)</span>= SO<sub>2</sub>, PM<sub>1</sub>, PM<sub>3</sub>, PM<sub>7</sub>, PM<sub>13</sub>, SO<sub>4</sub>, NO<sub>3</sub></p>
 <p><span class="math inline">\(l\)</span> = inside country, outside country</p>
-<p>Then, country level averages will be computed as the weighted average of the <span class="math inline">\(\text{iF}\)</span> of each plant located inside the country, using as the weight the power generation<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> of each power plant.</p>
+<p>Then, country level averages will be computed as the weighted average of the <span class="math inline">\(\text{iF}\)</span> of each plant located inside the country, using as the weight the power generation<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> of each power plant.</p>
 <p>Finally, we calculate the changes in PM<sub>2.5</sub> concentrations rearranging the terms in expression ( 6‑35), assuming that the entire population is exposed to the weighted average concentration. We also adjust the units to obtain changes in concentration in µg/m<sup>3</sup>. <span class="math inline">\(\text{CM}\)</span> corresponds to the implied “concentration matrix” that relates changes in concentration derived from 1 ton of emissions per year.</p>
 <table class="table">
 <colgroup>
@@ -2647,7 +2645,7 @@ Relative Risk estimates (by cause, age and exposure level)
 Population projections by age group and country
 </td>
 <td>
-WB Population Estimates and Projections[16] (World Bank Group 2019). The database includes population projections by country, sex and age range by country up to 2050. It also includes the share or urban and rural populations.
+WB Population Estimates and Projections<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> (World Bank Group 2019). The database includes population projections by country, sex and age range by country up to 2050. It also includes the share or urban and rural populations.
 </td>
 </tr>
 <tr class="odd">
@@ -2696,7 +2694,7 @@ Neonatal diseases: Sudden infant death syndrome, Diarrheal diseases, Lower respi
 Exposure to ambient PM<sub>2.5</sub>
 </td>
 <td>
-WHO Country average exposure (World Health Organization 2018b)[17] and GBD 2019 ambient concentrations.
+WHO Country average exposure (World Health Organization 2018b)<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> and GBD 2019 ambient concentrations.
 </td>
 </tr>
 <tr class="even">
@@ -2747,7 +2745,7 @@ Data from the GBD 2019 study, provided by Michael Brauer
 </tbody>
 </table>
 <p>Hazard ratio is often interpreted as relative risk, but they are not technically the same. The main difference is that relative risk does not consider the timing of the event but only the occurrence of the event by the end of the observation period. The hazard ratio considers both.</p>
-<p><strong>Incidence</strong> corresponds to the number of new cases of a given disease during a given period in a specified population. It also is used for the rate at which new events occur in a defined population. It is differentiated from prevalence, which refers to all cases, new or old, in the population at a given time<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a>.</p>
+<p><strong>Incidence</strong> corresponds to the number of new cases of a given disease during a given period in a specified population. It also is used for the rate at which new events occur in a defined population. It is differentiated from prevalence, which refers to all cases, new or old, in the population at a given time<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>.</p>
 <table class="table">
 <colgroup>
 <col style="width: 98%">
@@ -2760,7 +2758,7 @@ Data from the GBD 2019 study, provided by Michael Brauer
 </tr>
 </tbody>
 </table>
-<p><strong>Prevalence</strong> is the total number of cases of a given disease in a specified population at a designated time. It is differentiated from incidence, which refers to the number of new cases in the population at a given time<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>.</p>
+<p><strong>Prevalence</strong> is the total number of cases of a given disease in a specified population at a designated time. It is differentiated from incidence, which refers to the number of new cases in the population at a given time<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>.</p>
 <table class="table">
 <colgroup>
 <col style="width: 98%">
@@ -2787,11 +2785,11 @@ Data from the GBD 2019 study, provided by Michael Brauer
 <p>In CPAT, we quantify the effects of air pollution following the methodology of the Global Burden of disease study for 2019 (GBD 2019 Risk Factors Collaborators 2020). The methodology uses and Integrated Exposure Response (IER) approach, basing its estimates in studies for ambient pollution, second-hand smoking and household pollution. This methodology represents and upgrade from the previous version of the study and the main differences with the previous methodology are the following:</p>
 <ul>
 <li><p>GBD 2019 no longer uses active smoking data in the risk curves. This removes an important source of uncertainty</p></li>
-<li><p>New studies in China and other high-exposure settings are now used<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p></li>
+<li><p>New studies in China and other high-exposure settings are now used<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a></p></li>
 <li><p>No fixed functional form. Splines generated using MR-BRT (meta-regression boosted regression trees)</p></li>
 </ul>
 <p>The methodology implemented in CPAT assess jointly the effects of ambient and household pollution. This feature is important because it allows the quantification of a possible increase in the use of solid fuels for cooking (leakage effects) and because household pollution is a major health problem in many countries of the world.</p>
-<p>The relative risks used in CPAT from GBD 2019 are presented in Figure 6‑18. In the case of ischemic heart disease and stroke, the RR presented is an average across all the age groups, which are defined in buckets of 5 years<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a>. In CPAT, we work with the following age groups: neonates, post neonates, under 15, 15 to 64 and 65 years and above. We use the average relative risk withing each group.</p>
+<p>The relative risks used in CPAT from GBD 2019 are presented in Figure 6‑18. In the case of ischemic heart disease and stroke, the RR presented is an average across all the age groups, which are defined in buckets of 5 years<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a>. In CPAT, we work with the following age groups: neonates, post neonates, under 15, 15 to 64 and 65 years and above. We use the average relative risk withing each group.</p>
 <p>Figure ‑: RR from the Integrated exposure response function, GBD 2019</p>
 <p><img src="./06/media/image17.png" class="img-fluid"></p>
 <p>Source: Based on (GBD 2019 Risk Factors Collaborators 2020).</p>
@@ -2843,13 +2841,13 @@ Data from the GBD 2019 study, provided by Michael Brauer
 <td></td>
 </tr>
 <tr class="odd">
-<td>Low birthweight diseases<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a><a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>, excluding lower respiratory infections</td>
+<td>Low birthweight diseases<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a><a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a>, excluding lower respiratory infections</td>
 <td>Neonatal (under 28 days)</td>
 <td>Constant</td>
 </tr>
 </tbody>
 </table>
-<p>Source: Own elaboration. Note: GBD2019 also quantifies preterm birth<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a> effects attributed to pollution. We do not quantify this in CPAT, to avoid double counting of effects, when aggregating the total impacts of pollution.</p>
+<p>Source: Own elaboration. Note: GBD2019 also quantifies preterm birth<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> effects attributed to pollution. We do not quantify this in CPAT, to avoid double counting of effects, when aggregating the total impacts of pollution.</p>
 <p>The joint methodology requires the fraction of the population that it is exposed to solid fuels for cooking, <span class="math inline">\(p_{\text{HAP}}\)</span>, and the level of exposure to household air pollution (HAP), as the additional exposure over and above ambient exposure to PM<sub>2.5</sub> (OAP).</p>
 <p>For the proportion of the population <strong><u>not</u></strong> exposed to HAP, the relative risk is presented in expression ( 6‑51).</p>
 <table class="table">
@@ -2975,7 +2973,7 @@ Data from the GBD 2019 study, provided by Michael Brauer
 </tbody>
 </table>
 <p>Where <span class="math inline">\(L_{s,a}\)</span> is a standard loss function specifying years of life lost for a death at age <span class="math inline">\(a\)</span> for sex <span class="math inline">\(s\)</span>.</p>
-<p>The years lived with disease (YLD) are measured by the multiplication of the prevalence of the condition<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a> and a weight factor that reflects the severity of the condition on a scale from 0 (perfect health) to 1 (death).</p>
+<p>The years lived with disease (YLD) are measured by the multiplication of the prevalence of the condition<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a> and a weight factor that reflects the severity of the condition on a scale from 0 (perfect health) to 1 (death).</p>
 <table class="table">
 <tbody>
 <tr class="odd">
@@ -3122,7 +3120,7 @@ Level of additional population exposure to household air pollution
 </section>
 <section id="leakage-to-biomass" class="level3" data-number="6.6.5">
 <h3 data-number="6.6.5" class="anchored" data-anchor-id="leakage-to-biomass"><span class="header-section-number">6.6.5</span> Leakage to biomass</h3>
-<p>Carbon pricing to formal fuels could potentially lead to an increase in the use of solid fuels<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a> for cooking. This is called a “leakage” effect and could increase both household and ambient pollution. Figure 6‑25 illustrates the carbon pricing effects on fuels consumption.</p>
+<p>Carbon pricing to formal fuels could potentially lead to an increase in the use of solid fuels<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a> for cooking. This is called a “leakage” effect and could increase both household and ambient pollution. Figure 6‑25 illustrates the carbon pricing effects on fuels consumption.</p>
 <p>Figure ‑: Illustration of the impact on carbon pricing in the consumption of fuels</p>
 <p><img src="./06/media/image23.png" class="img-fluid"></p>
 <p>Source: Own elaboration</p>
@@ -3234,7 +3232,7 @@ Level of additional population exposure to household air pollution
 <td>ILOs indicators</td>
 </tr>
 <tr class="even">
-<td>Real interest rate<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></td>
+<td>Real interest rate<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a></td>
 <td>World Development Indicators, World Bank</td>
 </tr>
 <tr class="odd">
@@ -3267,7 +3265,7 @@ Level of additional population exposure to household air pollution
 <p><span class="chart"><span class="math inline">\(CHART\)</span></span></p>
 <p>Source: (OECD 2020) and (WHO 2019)</p>
 <p>In CPAT, we quantify working days lost attributed to pollution following Ostro (1987). This methodology has been implemented in more recent literature, such as Holland (2014) and (IIASA 2017). OECD research (OECD 2016) and (OECD 2019) has also been based indirectly in Ostro (1987) but referencing the work from Holland (2014).</p>
-<p>The baseline absenteeism from work due to illness data used are the OECD database “Absence from work due to illness” (OECD 2020) that covers 46 countries<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> and “Absenteeism from work due to illness”<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a> from the WHO (WHO 2019). Figure 6‑27 presents the data from the observed databases.</p>
+<p>The baseline absenteeism from work due to illness data used are the OECD database “Absence from work due to illness” (OECD 2020) that covers 46 countries<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a> and “Absenteeism from work due to illness”<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a> from the WHO (WHO 2019). Figure 6‑27 presents the data from the observed databases.</p>
 <p>Since not every country is covered in the databases, we adopt the following assumptions for obtaining baseline absenteeism at a country level:</p>
 <ul>
 <li><p>If the country in included in the OECD database, we use OECD data.</p></li>
@@ -3503,7 +3501,7 @@ Number or persons that are employed
 <br><span class="math display"><em>L</em> = <em>L</em><em>a</em><em>b</em><em>o</em><em>r</em><em>F</em><em>o</em><em>r</em><em>c</em><em>e</em><sub>total</sub> * (1 − <em>u</em><em>n</em><em>e</em><em>m</em><em>p</em><em>l</em><em>o</em><em>y</em><em>m</em><em>e</em><em>n</em><em>t</em>)</span><br>
 </p>
 <p>
-Labor force[30] derived using data from International Labour Organization, ILOSTAT database and World Bank population estimates. Labor data retrieved in April 2019.
+Labor force<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a> derived using data from International Labour Organization, ILOSTAT database and World Bank population estimates. Labor data retrieved in April 2019.
 </p>
 <p>
 Unemployment from International Labour Organization, ILOSTAT database. Data retrieved in April 2019.
@@ -3533,7 +3531,7 @@ Probability of survival
 The probability of survival is the probability that an individual would have survived to each future year of his working life.
 </p>
 <p>
-The probability of death[31] is obtained from (Global Burden of Disease Collaborative Network 2018) for every country and age group. The probability of survival up to 64 years is calculated as follows:
+The probability of death<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a> is obtained from (Global Burden of Disease Collaborative Network 2018) for every country and age group. The probability of survival up to 64 years is calculated as follows:
 </p>
 <p>
 <br><span class="math display"><span class="math display">\[\pi_{j} = \prod_{j}^{64}{(1 - \text{Prob\ of\ death}_{j})}\]</span></span><br>
@@ -3549,7 +3547,7 @@ growth rate of GDP per worker
 </td>
 <td>
 <p>
-ILO indicators[32], up to 2023:
+ILO indicators<a href="#fn32" class="footnote-ref" id="fnref32" role="doc-noteref"><sup>32</sup></a>, up to 2023:
 </p>
 <p>
 </p><ul>
@@ -3572,7 +3570,7 @@ Discount rate
 CPAT allows the user to select among 3 options: i) Use the real interest rate for the country, ii) Using a 3% discount rate, as recommended in (Robinson, Hammitt, and O’Keeffe 2019), iii) Input manually a discount rate.
 </p>
 <p>
-In case the user selects the first option,<span class="math inline"> r</span> will be the real interest rate[33] (%) from the International Monetary Fund, International Financial Statistics and data files using World Bank data on the GDP deflator[34]. That data covers 127 countries.
+In case the user selects the first option,<span class="math inline"> r</span> will be the real interest rate<a href="#fn33" class="footnote-ref" id="fnref33" role="doc-noteref"><sup>33</sup></a> (%) from the International Monetary Fund, International Financial Statistics and data files using World Bank data on the GDP deflator<a href="#fn34" class="footnote-ref" id="fnref34" role="doc-noteref"><sup>34</sup></a>. That data covers 127 countries.
 </p>
 <p>
 Data is available up to 2018. After 2018, it’s assumed an interest rate equal to the average of the rates between 2014 and 2018.
@@ -4141,7 +4139,7 @@ Table 6.1, (OECD 2012)
 </tbody>
 </table>
 <p>In CPAT, there are estimations for the congestion index for each year, under the baseline scenario and a carbon price scenario. Using the expression ( 6‑96) we can quantify travel time for each year under each scenario. Time savings attributed to a carbon price are equal travel time in the baseline minus travel time in the carbon price scenario.</p>
-<p>We value those time savings following (Robinson et al.&nbsp;2019). We value travel time at a rate of 50% the after-tax wage rate. We use gross earnings<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a> data from ILO and then we apply a factor to estimate after-tax wages. The factor used for OECD countries is the “average income tax rate as % of gross wage earnings”. For other countries, we use the average factor from OECD countries, equal to 16%. When we value travel time savings, we do so by considering only the population above 15 years old, since younger population does not participate in the labor market.</p>
+<p>We value those time savings following (Robinson et al.&nbsp;2019). We value travel time at a rate of 50% the after-tax wage rate. We use gross earnings<a href="#fn35" class="footnote-ref" id="fnref35" role="doc-noteref"><sup>35</sup></a> data from ILO and then we apply a factor to estimate after-tax wages. The factor used for OECD countries is the “average income tax rate as % of gross wage earnings”. For other countries, we use the average factor from OECD countries, equal to 16%. When we value travel time savings, we do so by considering only the population above 15 years old, since younger population does not participate in the labor market.</p>
 <p><strong>Some implied assumptions:</strong> We assume that free flow travel time and vehicle-kilometers traveled per capita are constant in time. Vehicle-kilometers traveled are the same across the population, regardless of age or other considerations. Tomtom’s data is representative of vehicles not using their devices.</p>
 </section>
 <section id="value-of-morbidity-using-years-lived-with-disabilities-ylds" class="level3" data-number="6.7.8">
@@ -4217,7 +4215,7 @@ Table 6.1, (OECD 2012)
 </section>
 <section id="concentrations-share-of-fossil-fuels-on-ambient-pm2.5" class="level3" data-number="6.8.3">
 <h3 data-number="6.8.3" class="anchored" data-anchor-id="concentrations-share-of-fossil-fuels-on-ambient-pm2.5"><span class="header-section-number">6.8.3</span> Concentrations: share of fossil fuels on ambient PM2.5</h3>
-<p>Figure ‑. Comparison of the share of fossil fuels contribution to ambient PM2.5 from Vohra et. al 2021<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a> and CPAT “<strong>Avg. iF and LS FASST</strong>” (Option 6 in this documentation).</p>
+<p>Figure ‑. Comparison of the share of fossil fuels contribution to ambient PM2.5 from Vohra et. al 2021<a href="#fn36" class="footnote-ref" id="fnref36" role="doc-noteref"><sup>36</sup></a> and CPAT “<strong>Avg. iF and LS FASST</strong>” (Option 6 in this documentation).</p>
 <p><span class="chart"><span class="math inline">\(CHART\)</span></span></p>
 <p>Source: Own elaboration. Note: Vohra et al.&nbsp;(2021) share of FF contribution to ambient PM2.5 if higher than in CPAT for 61% of countries</p>
 <p>Figure ‑. Comparison of the share of fossil fuels contribution to ambient PM2.5 from Vohra et. al 2021 and CPAT “<strong>Machine Learning</strong>” (Option 5 in this documentation).</p>
@@ -4233,7 +4231,7 @@ Table 6.1, (OECD 2012)
 </section>
 <section id="externalities-from-pollution" class="level3" data-number="6.8.4">
 <h3 data-number="6.8.4" class="anchored" data-anchor-id="externalities-from-pollution"><span class="header-section-number">6.8.4</span> Externalities from pollution</h3>
-<p>Figure ‑. Comparison among CPAT results and Delft 2022<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a></p>
+<p>Figure ‑. Comparison among CPAT results and Delft 2022<a href="#fn37" class="footnote-ref" id="fnref37" role="doc-noteref"><sup>37</sup></a></p>
 <p><span class="chart"><span class="math inline">\(CHART\)</span></span></p>
 </section>
 </section>
@@ -7075,27 +7073,36 @@ This point was clarified during the previous review
 <li id="fn6"><p>POM is assumed to be equal to 1.3*OC<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7"><p>Total PM2.5= BC + POM + Other primary PM2.5<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn8"><p>6mDMA8h corresponds to the seasonal (six-month period with the highest mean) 8-h daily maximum concentration metric<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>Country borders from Columbia National Administrative Boundaries, v3 (2000), available in <a href="https://sedac.ciesin.columbia.edu/data/set/gpw-v3-national-admin-boundaries/data-download" class="uri">https://sedac.ciesin.columbia.edu/data/set/gpw-v3-national-admin-boundaries/data-download</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>A 30 arc-second resolution is equivalent to 1x1 km in the equator.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>https://www.esrl.noaa.gov/psd/data/gridded/tables/precipitation.html<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p>Data available in <a href="https://sedac.ciesin.columbia.edu/data/set/ma-climate-land-cover/metadata" class="uri">https://sedac.ciesin.columbia.edu/data/set/ma-climate-land-cover/metadata</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p>Using the average generation of each plant, the estimated generation according to (World Resources Institute 2018), or a simple average among plants when no generation data is available.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p>Reference from <a href="https://www.healthdata.org/terms-defined" class="uri">https://www.healthdata.org/terms-defined</a><a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>Reference from <a href="https://www.healthdata.org/terms-defined" class="uri">https://www.healthdata.org/terms-defined</a><a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn16"><p>The new studies for China are (Yin et al.&nbsp;2017) and (Li et al. 2018).<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn17"><p>The age groups with different RR for Stroke and Ischemic heart disease are: <em>25 to 29, 30 to 34, 35 to 39, 40 to 44, 45 to 49, 50 to 54, 55 to 59, 60 to 64, 65 to 69, 70 to 74, 75 to 79, 80 to 84, 85 to 89, 90 to 94, 95+.</em><a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn18"><p>Low birthweight is been historically referred to any birthweight less than 2500 grams. TMREL $3500, 4000) g.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn19"><p>Low birthweight is a risk. The causes associated with this risk are Diarrheal diseases, Lower respiratory infections, Upper respiratory infections, Otitis media, Pneumococcal meningitis, H influenzae type B meningitis</p>
-<p>Meningococcal meningitis, Other meningitis, Encephalitis, Neonatal preterm birth complications, Neonatal encephalopathy due to birth asphyxia and trauma, Neonatal sepsis and other neonatal infections, Haemolytic disease and other neonatal jaundice, Other neonatal disorders and Sudden infant death syndrome.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn20"><p>Preterm birth refers to newborn babies born less than 37 completed weeks of gestation. In the GBD context, “short gestation” is used to refer to all gestational ages below the gestational age TMREL. TMREL is $38, 40) weeks.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn21"><p>The WHO considers sequelae associated to different diseases or conditions.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn22"><p>Solid fuels include coal, wood, charcoal, dung, and agricultural residues.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn23"><p>Real interest rate is the lending interest rate adjusted for inflation as measured by the GDP deflator.<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn24"><p>Data available in <a href="https://stats.oecd.org/index.aspx?queryid=30123" class="uri">https://stats.oecd.org/index.aspx?queryid=30123</a><a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn25"><p>Data available in <a href="https://gateway.euro.who.int/en/indicators/hfa_411-2700-absenteeism-from-work-due-to-illness-days-per-employee-per-year/" class="uri">https://gateway.euro.who.int/en/indicators/hfa_411-2700-absenteeism-from-work-due-to-illness-days-per-employee-per-year/</a><a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn26"><p>Glossary of terms here: https://dev-ilostat.pantheonsite.io/resources/concepts-and-definitions/description-earnings-and-labour-cost/<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn27"><p>Vohra et al.&nbsp;(2021). Global mortality from outdoor fine particle pollution generated by fossil fuel combustion: Results from GEOS-Chem. <a href="https://doi.org/10.1016/j.envres.2021.110754" class="uri">https://doi.org/10.1016/j.envres.2021.110754</a><a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn28"><p>Delft (2022). Health-related social costs of air pollution due to residential heating and cooking in the EU27 and UK<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Data available at <a href="http://datasets.wri.org/dataset/globalpowerplantdatabase" class="uri">http://datasets.wri.org/dataset/globalpowerplantdatabase</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Data available in <a href="https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-count-rev11/data-download" class="uri">https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-count-rev11/data-download</a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Country borders from Columbia National Administrative Boundaries, v3 (2000), available in <a href="https://sedac.ciesin.columbia.edu/data/set/gpw-v3-national-admin-boundaries/data-download" class="uri">https://sedac.ciesin.columbia.edu/data/set/gpw-v3-national-admin-boundaries/data-download</a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>A 30 arc-second resolution is equivalent to 1x1 km in the equator.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>https://www.esrl.noaa.gov/psd/data/gridded/tables/precipitation.html<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Data available in <a href="https://sedac.ciesin.columbia.edu/data/set/ma-climate-land-cover/metadata" class="uri">https://sedac.ciesin.columbia.edu/data/set/ma-climate-land-cover/metadata</a><a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Using the average generation of each plant, the estimated generation according to (World Resources Institute 2018), or a simple average among plants when no generation data is available.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>Data available in https://datacatalog.worldbank.org/dataset/population-estimates-and-projections<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>Data available in <a href="http://apps.who.int/gho/data/node.main.152?lang=en" class="uri">http://apps.who.int/gho/data/node.main.152?lang=en</a><a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>Reference from <a href="https://www.healthdata.org/terms-defined" class="uri">https://www.healthdata.org/terms-defined</a><a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>Reference from <a href="https://www.healthdata.org/terms-defined" class="uri">https://www.healthdata.org/terms-defined</a><a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>The new studies for China are (Yin et al.&nbsp;2017) and (Li et al. 2018).<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>The age groups with different RR for Stroke and Ischemic heart disease are: <em>25 to 29, 30 to 34, 35 to 39, 40 to 44, 45 to 49, 50 to 54, 55 to 59, 60 to 64, 65 to 69, 70 to 74, 75 to 79, 80 to 84, 85 to 89, 90 to 94, 95+.</em><a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>Low birthweight is been historically referred to any birthweight less than 2500 grams. TMREL $3500, 4000) g.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>Low birthweight is a risk. The causes associated with this risk are Diarrheal diseases, Lower respiratory infections, Upper respiratory infections, Otitis media, Pneumococcal meningitis, H influenzae type B meningitis</p>
+<p>Meningococcal meningitis, Other meningitis, Encephalitis, Neonatal preterm birth complications, Neonatal encephalopathy due to birth asphyxia and trauma, Neonatal sepsis and other neonatal infections, Haemolytic disease and other neonatal jaundice, Other neonatal disorders and Sudden infant death syndrome.<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>Preterm birth refers to newborn babies born less than 37 completed weeks of gestation. In the GBD context, “short gestation” is used to refer to all gestational ages below the gestational age TMREL. TMREL is $38, 40) weeks.<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p>The WHO considers sequelae associated to different diseases or conditions.<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p>Solid fuels include coal, wood, charcoal, dung, and agricultural residues.<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn27"><p>Real interest rate is the lending interest rate adjusted for inflation as measured by the GDP deflator.<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn28"><p>Data available in <a href="https://stats.oecd.org/index.aspx?queryid=30123" class="uri">https://stats.oecd.org/index.aspx?queryid=30123</a><a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn29"><p>Data available in <a href="https://gateway.euro.who.int/en/indicators/hfa_411-2700-absenteeism-from-work-due-to-illness-days-per-employee-per-year/" class="uri">https://gateway.euro.who.int/en/indicators/hfa_411-2700-absenteeism-from-work-due-to-illness-days-per-employee-per-year/</a><a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn30"><p>Labor force comprises people ages 15 and older who supply labor to produce goods and services during a specified period. It includes people who are currently employed and people who are unemployed but seeking work as well as first-time jobseekers. Not everyone who works is included, however. Unpaid workers, family workers, and students are often omitted, and some countries do not count members of the armed forces. Labor force size tends to vary during the year as seasonal workers enter and leave.<a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn31"><p>The probability that a person dies during an interval of two ages (e.g., between birth and age 5), if the rates of all-cause mortality in a specified year of interest would remain constant into the future.<a href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn32"><p>Data available in <a href="https://www.ilo.org/ilostat-files/Documents/Bulk_ilostat_en.html">https://www.ilo.org/ilostat-files/Documents/Bulk_ilostat_en.html#</a>, accessed in December 2019<a href="#fnref32" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn33"><p>Real interest rate is the lending interest rate adjusted for inflation as measured by the GDP deflator. The terms and conditions attached to lending rates differ by country, however, limiting their comparability.<a href="#fnref33" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn34"><p>Data available in <a href="https://data.worldbank.org/indicator/FR.INR.RINR" class="uri">https://data.worldbank.org/indicator/FR.INR.RINR</a>, accessed in December 2019.<a href="#fnref34" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn35"><p>Glossary of terms here: https://dev-ilostat.pantheonsite.io/resources/concepts-and-definitions/description-earnings-and-labour-cost/<a href="#fnref35" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn36"><p>Vohra et al.&nbsp;(2021). Global mortality from outdoor fine particle pollution generated by fossil fuel combustion: Results from GEOS-Chem. <a href="https://doi.org/10.1016/j.envres.2021.110754" class="uri">https://doi.org/10.1016/j.envres.2021.110754</a><a href="#fnref36" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn37"><p>Delft (2022). Health-related social costs of air pollution due to residential heating and cooking in the EU27 and UK<a href="#fnref37" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
